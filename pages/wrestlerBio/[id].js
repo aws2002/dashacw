@@ -66,7 +66,7 @@ export default function WrestlerBio() {
                 <div className=" grid grid-cols-3">
                   <div className="col-span-full">
                       <picture>
-                        <img src="../assets/Vid4.png" className=" w-full" alt="" />
+                        <img loading="lazy" src="../assets/Vid4.png" className=" w-full" alt="" />
                       </picture>
                   </div>
                 </div>
@@ -76,7 +76,7 @@ export default function WrestlerBio() {
                   {[1,2,3,4,5,6,7,8,9].map((id)=>{
                     return <div className=" col-span-1" key={id}>
                     <picture>
-                      <img src="../assets/sans titre-0856.png" alt="" />
+                      <img loading="lazy" src="../assets/sans titre-0856.png" alt="" />
                     </picture>
                   </div>
                   })}

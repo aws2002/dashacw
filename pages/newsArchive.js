@@ -16,11 +16,9 @@ export default function NewsArchive() {
               { id: "6" },
               { id: "7" },
               { id: "8" },
-            ].map(({ id }) => (
-              <>
-                <CardNews id={id} />
-              </>
-            ))}
+            ].map(({ id }) => {
+              return <CardNews id={id} key={id} />;
+            })}
           </div>
         </div>
       </section>

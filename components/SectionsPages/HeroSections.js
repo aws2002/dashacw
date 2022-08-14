@@ -59,7 +59,7 @@ export default function HeroSections() {
     },
   ];
   return (
-    <section className="heroSections pt-5 relative bg-bottom  mb-10 bg-[url('/assets/Bg3.png')] overflow-hidden bg-cover bg-no-repeat lg:h-[88vh]">
+    <section className="heroSections relative bg-bottom  mb-10 bg-[url('/assets/Bg3.png')] overflow-hidden bg-cover bg-no-repeat lg:h-[88vh]">
       <div className=" container">
         <motion.div
           whileHover={{ scale: 1.2 }}
@@ -86,7 +86,7 @@ export default function HeroSections() {
               <div className=" grid grid-cols-12">
                 <div className=" lg:col-span-4 lg:order-1 order-2 col-span-6">
                   <picture>
-                    <img src="./assets/Image 1.png" className="h-full" alt="" />
+                    <img src="./assets/Image 1.png" loading="lazy" className="h-full" alt="" />
                   </picture>
                 </div>
                 <div className=" lg:col-span-4 mb-10 pt-4 col-span-full lg:mt-20 text-center lg:order-2 order-1">
@@ -102,6 +102,7 @@ export default function HeroSections() {
                     <img
                       src="./assets/R-Image@2x.png"
                       className="h-full"
+                      loading="lazy"
                       alt=""
                     />
                   </picture>

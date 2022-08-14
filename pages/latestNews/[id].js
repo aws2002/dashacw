@@ -1,5 +1,4 @@
-import React from "react";
-import Layout from "../components/Layouts/Layout";
+import Layout from "../../components/Layouts/Layout";
 export default function LatestNews() {
   return (
     <Layout>
@@ -17,12 +16,12 @@ export default function LatestNews() {
             {[
               {
                 id: 1,
-                img: "./assets/Image 2.png",
+                img: "../assets/Image 2.png",
                 ds1: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autemcupiditate, labore temporibus dicta expedita quod assumendaculpa vero commodi, sunt sequi sit debitis rerum suscipit!Expedita iusto illum mollitia. Soluta. Lorem ipsum dolor sitamet consectetur adipisicing elit. Nulla animi nostrumlaudantium pariatur atque minima magnam voluptates est fugiatfugit molestias optio magni aut, sunt architecto laboriosam,quae aliquid similique id sed hic deleniti minus obcaecati?Voluptatem in molestiae quis nemo ducimus. Tempore, nesciuntenim! Iusto est ab laborum quae! Lorem ipsum dolor sit ametconsectetur, adipisicing elit. Saepe, laudantium. Molestiae quiaeos sed saepe aspernatur eum qui ratione itaque nisi beataeofficiis at praesentium, debitis, unde consectetur iure soluta.",
               },
               {
                 id: 2,
-                img: "./assets/Image 2.png",
+                img: "../assets/Image 2.png",
                 ds1: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autemcupiditate, labore temporibus dicta expedita quod assumendaculpa vero commodi, sunt sequi sit debitis rerum suscipit!Expedita iusto illum mollitia. Soluta. Lorem ipsum dolor sitamet consectetur adipisicing elit. Nulla animi nostrumlaudantium pariatur atque minima magnam voluptates est fugiatfugit molestias optio magni aut, sunt architecto laboriosam,quae aliquid similique id sed hic deleniti minus obcaecati?Voluptatem in molestiae quis nemo ducimus. Tempore, nesciuntenim! Iusto est ab laborum quae! Lorem ipsum dolor sit ametconsectetur, adipisicing elit. Saepe, laudantium. Molestiae quiaeos sed saepe aspernatur eum qui ratione itaque nisi beataeofficiis at praesentium, debitis, unde consectetur iure soluta.",
                 ds2: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autemcupiditate, labore temporibus dicta expedita quod assumendaculpa vero commodi, sunt sequi sit debitis rerum suscipit!Expedita iusto illum mollitia. Soluta. Lorem ipsum dolor sitamet consectetur adipisicing elit. Nulla animi nostrumlaudantium pariatur atque minima magnam voluptates est fugiatfugit molestias optio magni aut, sunt architecto laboriosam,quae aliquid similique id sed hic deleniti minus obcaecati?Voluptatem in molestiae quis nemo ducimus. Tempore, nesciuntenim! Iusto est ab laborum quae! Lorem ipsum dolor sit ametconsectetur, adipisicing elit. Saepe, laudantium. Molestiae quiaeos sed saepe aspernatur eum qui ratione itaque nisi beataeofficiis at praesentium, debitis, unde consectetur iure soluta. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autemcupiditate, labore temporibus dicta expedita quod assumendaculpa vero commodi, sunt sequi sit debitis rerum suscipit!Expedita iusto illum mollitia. Soluta. Lorem ipsum dolor sitamet consectetur adipisicing elit. Nulla animi nostrumlaudantium pariatur atque minima magnam voluptates est fugiatfugit molestias optio magni aut, sunt architecto laboriosam,quae aliquid similique id sed hic deleniti minus obcaecati?Voluptatem in molestiae quis nemo ducimus. Tempore, nesciuntenim! Iusto est ab laborum quae! Lorem ipsum dolor sit ametconsectetur, adipisicing elit. Saepe, laudantium. Molestiae quiaeos sed saepe aspernatur eum qui ratione itaque nisi beataeofficiis at praesentium, debitis, unde consectetur iure soluta.",
               },
@@ -47,11 +46,11 @@ export default function LatestNews() {
               <div className=" text-center mb-10">
                 <h2 className="font-extrabold text-4xl uppercase">images</h2>
               </div>
-              <div className=" grid grid-cols-3 gap-5">
+              <div className=" grid grid-cols-12 gap-5">
                 {[1, 2, 3, 4, 5, 6].map((id) => (
-                  <div className=" col-span-1" key={id}>
+                  <div className=" lg:col-span-4 col-span-6" key={id}>
                     <picture>
-                      <img src="./assets/6.png" alt="" />
+                      <img src="../assets/6.png" alt="" />
                     </picture>
                   </div>
                 ))}
