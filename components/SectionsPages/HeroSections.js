@@ -18,7 +18,7 @@ export default function HeroSections() {
       <motion.div
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
-        className="lg:-mt-28 -mt-80 bg-slate-400 rounded-full w-3 h-3 btn-dots"
+        className="lg:-mt-28 -mt-[350px] bg-slate-400 rounded-full w-3 h-3 btn-dots"
       ></motion.div>
     ),
     responsive: [
@@ -57,7 +57,7 @@ export default function HeroSections() {
     },
   ];
   return (
-    <section className="heroSections relative bg-bottom  mb-10 bg-[url('https://i.im.ge/2022/08/14/OXncKK.Bg3.png')] overflow-hidden bg-cover bg-no-repeat lg:h-[88vh]">
+    <section className="heroSections relative bg-bottom  mb-10 bg-[url('https://i.im.ge/2022/08/14/OXncKK.Bg3.png')] overflow-hidden bg-cover bg-no-repeat lg:h-[79vh]">
       <div className=" container">
         <motion.div
           whileHover={{ scale: 1.2 }}
@@ -77,12 +77,12 @@ export default function HeroSections() {
         </motion.div>
       </div>
 
-      <div className=" grid grid-cols-1">
+      <div className=" grid grid-cols-1 pt-14">
         <Slider {...settings} ref={sliderRef}>
           {dataHeroSections.map(({ id, img, name, text, saveUp }) => (
-            <div key={id} className="">
+            <div key={id}>
               <div className=" grid grid-cols-12">
-                <div className=" lg:col-span-4 lg:order-1 order-2 col-span-6">
+                <div className=" lg:col-span-3 lg:order-1 order-2 col-span-6 -mr-10">
                   <picture>
                     <img
                       src="https://i.im.ge/2022/08/14/OXJ6YM.Image-1.png"
@@ -92,15 +92,18 @@ export default function HeroSections() {
                     />
                   </picture>
                 </div>
-                <div className=" lg:col-span-4 mb-10 pt-4 col-span-full lg:mt-20 text-center lg:order-2 order-1">
-                  <h1 className=" lg:text-5xl text-4xl mb-10 text-white font-extrabold  letter-spacing">
+                <div className=" lg:col-span-6 mb-10 col-span-full  text-center lg:order-2 order-1">
+                  <h1 className=" lg:text-7xl text-[42px] mb-5 text-white font-extrabold  letter-spacing">
                     JUSTIN TURNBULL
-                    <span className="block text-main text-shadow my-4">VS</span>
+                    <span className="block text-main text-shadow">VS</span>
                     BRIAN PILLMAN JR
                   </h1>
-                  <button className="btn"> MORE INFO</button>
+                  <button className="btn text-2xl border border-b-4 border-black">
+                    {" "}
+                    MORE INFO
+                  </button>
                 </div>
-                <div className=" lg:col-span-4 col-span-6 lg:order-3 order-3">
+                <div className=" lg:col-span-3 col-span-6 lg:order-3 order-3 -ml-10">
                   <picture>
                     <img
                       src="https://i.im.ge/2022/08/14/OXnoZ9.R-Image.png"

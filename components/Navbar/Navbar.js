@@ -28,7 +28,7 @@ export default function Navbar() {
     >
       <div className=" grid grid-cols-12">
         <div className="col-span-4 flex items-center ">
-          <div className=" grid grid-cols-4 ">
+          <div className=" grid grid-cols-4 ml-4">
             {data.footerLinks.social.map(({ id, icon }) => (
               <motion.div
                 whileHover={{ scale: 1.2 }}
@@ -46,7 +46,6 @@ export default function Navbar() {
         <div className="col-span-4 mx-auto lg:top-5 top-10 relative cursor-pointer">
           <Link href="/">
             <div>
-            
               <picture className=" flex justify-center ">
                 <img
                   src="https://i.im.ge/2022/08/14/OXJlnW.ACW-Logo.png"

@@ -60,7 +60,7 @@ export default function LatestNews() {
                   </div>
                 ))}
                 <div className=" col-span-full text-center mt-10">
-                  <a href="" className="btn">
+                  <a href="" className="btn text-2xl">
                     BACK TO NEWS ARCHIVE
                   </a>
                 </div>

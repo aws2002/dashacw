@@ -20,7 +20,7 @@ export default function CollapseFAQs({ data}) {
           <div className="col-span-1  bg-main  px-4 py-5">
             <div className=" grid grid-cols-12">
               <div className="col-span-10">
-                <h1 className="font-bold text-opacity-80 text-md">
+                <h1 className="font-bold text-opacity-80 text-lg">
                   {item.titel}
                 </h1>
               </div>
@@ -32,17 +32,17 @@ export default function CollapseFAQs({ data}) {
                     }}
                     transition={{ duration: 1 }}
                   >
-                    <IoIosArrowUp className=" inline" />
+                    <IoIosArrowUp className=" inline text-2xl" />
                   </motion.div>
                 ) : (
                   <motion.div transition={{ duration: 1 }}>
-                    <IoIosArrowDown className=" inline" />
+                    <IoIosArrowDown className=" inline text-2xl" />
                   </motion.div>
                 )}
               </div>
             </div>
           </div>
-          <div className=" col-span-1 bg-[#2e0b45] px-8">
+          <div className=" col-span-1 bg-[#2e0b45] px-8 italic">
             {activ === index ? (
               <motion.div
                 animate={{ opacity: 1, y: 5 }}

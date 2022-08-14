@@ -4,11 +4,11 @@ import { GiMuscleUp, GiMuscularTorso } from "react-icons/gi";
 import Link from "next/link";
 export default function OurRoster() {
   return (
-    <section className="our--roster mt-20 px-5 py-10">
+    <section className="our--roster mt-20 px-5 py-20">
       <div className="container">
         <div className=" text-center mb-10">
           <h2 className=" font-extrabold text-4xl uppercase">
-            <GiMuscleUp className=" inline text-5xl text-animation2" /> OUR ROSTER{" "}
+            <GiMuscleUp className=" inline text-5xl text-animation2" /> <span className=" border-b-4 border-main">OUR ROSTER</span>{" "}
             <GiMuscleUp className="text-5xl inline" />
           </h2>
         </div>
@@ -18,7 +18,7 @@ export default function OurRoster() {
           })}
           <div className=" col-span-4 text-center">
             <Link href="/rosterViewAll">
-              <a className="btn uppercase">VIEW ALL</a>
+              <a className="btn uppercase text-2xl">VIEW ALL</a>
             </Link>
           </div>
         </div>

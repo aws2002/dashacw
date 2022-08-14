@@ -24,7 +24,7 @@ export default function WrestlerBio() {
                 <li className=" inline mr-4" key={id}>
                   <a
                     href=""
-                    className=" mt-10 uppercase bg-main lg:px-10 px-2 py-3 text-2xl font-bold transition-all hover:opacity-90"
+                    className=" mt-10 uppercase bg-main lg:px-10 px-2 py-3 text-xl font-bold transition-all hover:opacity-90"
                   >
                     {name}
                   </a>
@@ -58,7 +58,7 @@ export default function WrestlerBio() {
                 <li className=" inline mr-4" key={id}>
                   <a
                     href=""
-                    className=" mt-10 uppercase bg-main lg:px-10 px-2 py-3 text-2xl font-bold transition-all hover:opacity-90"
+                    className=" mt-10 uppercase bg-main lg:px-10 px-2 py-3 text-xl font-bold transition-all hover:opacity-90"
                   >
                     {name}
                   </a>
@@ -114,10 +114,10 @@ export default function WrestlerBio() {
             </div>
           </div>
         </div>
+        <Modal isToggled={selectedId} setToggle={setSelectedId}>
+          <motion.div>osama</motion.div>
+        </Modal>
       </section>
-      <Modal isToggled={selectedId} setToggle={setSelectedId}>
-        <motion.div>osama</motion.div>
-      </Modal>
     </Layout>
   );
 }

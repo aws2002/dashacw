@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import data from "../Data";
+import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <footer className=" bg-black pb-5 px-4">
@@ -10,12 +11,16 @@ export default function Footer() {
             <h4 className=" font-bold text-2xl">EXAMPLE</h4>
             <div className="bg-main h-1 w-2/4 mt-1"></div>
             <ul className="mt-2">
-              <li className="inline-block mr-6">
-                <a href="">test</a>
-              </li>
-              <li className=" inline-block mr-6">
-                <a href="">test</a>
-              </li>
+              {[
+                { id: 1, name: "Home", href: "" },
+                { id: 2, name: "Main", href: "" },
+                { id: 3, name: "Home", href: "" },
+                { id: 4, name: "Main", href: "" },
+              ].map(({ id, name, href }) => (
+                <li className="inline-block mr-6 italic" key={id}>
+                  <a href={href}>{name}</a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="lg:col-span-4 col-span-full mx-auto -mt-8 lg:order-2 order-3">
@@ -34,9 +39,14 @@ export default function Footer() {
 
               <ul className=" mt-2">
                 {data.footerLinks.social.map(({ id, icon }) => (
-                  <li className=" inline-block mr-6" key={id}>
+                  <motion.li
+                  whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.8 }}
+                    className=" inline-flex mr-6 bg-main w-12 h-12 justify-center rounded-full items-center"
+                    key={id}
+                  >
                     <a href="">{icon}</a>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             </div>
@@ -45,12 +55,16 @@ export default function Footer() {
             <h4 className=" font-bold text-2xl">EXAMPLE</h4>
             <div className="bg-main h-1 w-2/4 mt-1"></div>
             <ul className="mt-2">
-              <li className="inline-block ml-6">
-                <a href="">test</a>
-              </li>
-              <li className=" inline-block ml-6">
-                <a href="">test</a>
-              </li>
+              {[
+                { id: 1, name: "Home", href: "" },
+                { id: 2, name: "Main", href: "" },
+                { id: 3, name: "Home", href: "" },
+                { id: 4, name: "Main", href: "" },
+              ].map(({ id, name, href }) => (
+                <li className="inline-block ml-6 italic" key={id}>
+                  <a href={href}>{name}</a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

@@ -37,16 +37,16 @@ export default function HeroSectionWrestlerBio() {
             </picture>
           </motion.div>
           <motion.div
-            className="col-span-1"
+            className="col-span-1 px-16"
             animate="visible"
             variants={list}
             initial="hidden"
           >
-            <div className=" border-[15px] border-main p-10">
-              <motion.h1 variants={list} className=" font-extrabold text-5xl">
+            <div className=" border-[15px] border-main py-14 px-8">
+              <motion.h1 variants={list} className=" font-extrabold text-4xl">
                 JUSTIN TURNBULL
               </motion.h1>
-              <ul className=" mt-10 text-2xl text-gray-300">
+              <ul className=" mt-6 text-2xl text-gray-300">
                 {[
                   { id: 1, filed: "WEIGHT: ", dataFiled: "13O" },
                   { id: 2, filed: "HEIGHT:", dataFiled: "EXAMPLE" },
@@ -55,14 +55,14 @@ export default function HeroSectionWrestlerBio() {
                 ].map(({ id, filed, dataFiled }) => (
                   <motion.li
                     variants={list}
-                    className=" font-extrabold mb-4"
+                    className=" font-extrabold mb-3"
                     key={id}
                   >
                     {filed} <span className=" text-white">{dataFiled}</span>
                   </motion.li>
                 ))}
               </ul>
-              <div className=" mt-10">
+              <div className=" mt-14">
                 <motion.h4 variants={list} className=" font-extrabold text-5xl">
                   ACW RECORD
                 </motion.h4>

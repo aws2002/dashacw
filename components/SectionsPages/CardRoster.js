@@ -30,7 +30,7 @@ export default function CardRoster({ id }) {
             <span className="font-medium lg:text-lg text-sm">
               JIMMY TURNBULL
             </span>
-            <i></i>
+            {/* <i></i> */}
           </div>
         </div>
         <div className="card--content absolute z-50 flex top-2/4 lg:left-10 lg:right-10 left-5 right-5">

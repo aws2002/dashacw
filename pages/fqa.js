@@ -10,8 +10,8 @@ export default function Fqa() {
           <div className=" title text-center">
             <h1 className=" font-extrabold text-6xl">FQA</h1>
           </div>
-          <div className=" grid grid-cols-4 gap-10 lg:px-20 mt-10 text-center">
-            {[1, 2, 3, 4].map((id) => {
+          <div className=" grid grid-cols-4 gap-8 lg:px-20 mt-10 text-center">
+            {[1, 2, 3, 4,5,6,7,8].map((id) => {
               return (
                 <div className=" bg-main lg:col-span-1 col-span-2 p-4" key={id}>
                   <AiFillStar className=" text-9xl mx-auto" />
@@ -28,7 +28,7 @@ export default function Fqa() {
               STILL HAVE QUESTIONS? CONTACT US
             </p>
             <Link href="/contact">
-              <a className="btn">Contact US</a>
+              <a className="btn text-2xl">Contact US</a>
             </Link>
           </div>
         </div>
