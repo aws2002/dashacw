@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import data from "../Data";
+import Image from "next/image";
 import { motion } from "framer-motion";
 export default function Footer() {
   return (
@@ -28,10 +29,12 @@ export default function Footer() {
               <Link href="/">
                 <a>
                   <picture className=" flex justify-center">
-                    <img
-                      src="../assets/ACW_Logo.png"
+                    <Image
+                      src="/assets/ACW_Logo.png"
                       className=" w-32"
                       alt=""
+                      width={111}
+                      height={91}
                     />
                   </picture>
                 </a>
@@ -40,8 +43,8 @@ export default function Footer() {
               <ul className=" mt-2">
                 {data.footerLinks.social.map(({ id, icon }) => (
                   <motion.li
-                  whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.8 }}
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.8 }}
                     className=" inline-flex mr-6 bg-main w-12 h-12 justify-center rounded-full items-center"
                     key={id}
                   >

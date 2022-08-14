@@ -13,4 +13,4 @@ export default function MyApp({ Component, pageProps }) {
     </div>
   );
 }
-const EmptyLayout=({children})=><>{children}</>
+const EmptyLayout=({children})=><div>{children}</div>

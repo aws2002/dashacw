@@ -4,6 +4,7 @@ import { BiMenu } from "react-icons/bi";
 import { Menu, Transition } from "@headlessui/react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 export default function Navbar() {
   const [navActive, setnavActive] = useState(false);
 
@@ -47,10 +48,12 @@ export default function Navbar() {
           <Link href="/">
             <div>
               <picture className=" flex justify-center ">
-                <img
-                  src="../assets/ACW_Logo.png"
-                  className="w-28 z-[100]"
+                <Image
+                  src="/assets/ACW_Logo.png"
+                  className=" w-32 z-[100]"
                   alt=""
+                  width={111}
+                  height={91}
                 />
               </picture>
             </div>
