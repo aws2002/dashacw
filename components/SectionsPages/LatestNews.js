@@ -6,7 +6,7 @@ export default function LatestNews() {
     <section className="latest--news my-20 px-5">
       <div className="container">
         <div className=" text-center mb-10">
-          <h2 className=" font-extrabold text-4xl uppercase">
+          <h2 className=" font-extrabold lg:text-4xl text-3xl uppercase">
             <GiMuscleUp className=" inline text-5xl" /> <span className="border-b-4 border-main">Latest news</span> {" "}
             <GiMuscleUp className=" inline text-5xl" />
           </h2>

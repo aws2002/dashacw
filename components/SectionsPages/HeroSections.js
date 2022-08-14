@@ -18,7 +18,7 @@ export default function HeroSections() {
       <motion.div
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
-        className="lg:-mt-16 -mt-[350px] bg-slate-400 rounded-full w-3 h-3 btn-dots"
+        className="lg:-mt-16 -mt-[310px] bg-slate-400 rounded-full w-3 h-3 btn-dots"
       ></motion.div>
     ),
     responsive: [
@@ -57,7 +57,7 @@ export default function HeroSections() {
     },
   ];
   return (
-    <section className="heroSections relative bg-bottom  mb-10 bg-[url('https://i.im.ge/2022/08/14/OXncKK.Bg3.png')] overflow-hidden bg-cover bg-no-repeat lg:h-[87vh]">
+    <section className="heroSections relative bg-bottom  mb-10 bg3 overflow-hidden bg-cover bg-no-repeat lg:h-[87vh]">
       <div className=" container">
         <motion.div
           whileHover={{ scale: 1.2 }}
@@ -85,7 +85,7 @@ export default function HeroSections() {
                 <div className=" lg:col-span-3 lg:order-1 order-2 col-span-6 -mr-10">
                   <picture>
                     <img
-                      src="https://i.im.ge/2022/08/14/OXJ6YM.Image-1.png"
+                      src="./assets/Image 1.png"
                       loading="lazy"
                       className="h-full"
                       alt=""
@@ -93,7 +93,7 @@ export default function HeroSections() {
                   </picture>
                 </div>
                 <div className=" lg:col-span-6 mb-10 col-span-full  text-center lg:order-2 order-1">
-                  <h1 className=" lg:text-7xl text-[42px] mb-5 text-white font-extrabold  letter-spacing">
+                  <h1 className=" lg:text-7xl text-[35px] mb-5 text-white font-extrabold  letter-spacing">
                     JUSTIN TURNBULL
                     <span className="block text-main text-shadow">VS</span>
                     BRIAN PILLMAN JR
@@ -106,7 +106,7 @@ export default function HeroSections() {
                 <div className=" lg:col-span-3 col-span-6 lg:order-3 order-3 -ml-10">
                   <picture>
                     <img
-                      src="https://i.im.ge/2022/08/14/OXnoZ9.R-Image.png"
+                      src="./assets/R-Image.png"
                       className="h-full"
                       loading="lazy"
                       alt=""

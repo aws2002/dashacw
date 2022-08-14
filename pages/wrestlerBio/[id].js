@@ -8,9 +8,9 @@ export default function WrestlerBio() {
   const [selectedId, setSelectedId] = React.useState(false);
   return (
     <Layout>
-      <section className="wrestler--bio mb-20">
+      <section className="wrestler--bio mb-20 ">
         <HeroSectionWrestlerBio />
-        <div className=" container mt-10">
+        <div className=" container mt-10 px-4">
           <div>
             <h2 className=" text-3xl font-bold my-3">LINKS</h2>
             <div className=" bg-main w-1/4 h-2"></div>
@@ -21,7 +21,7 @@ export default function WrestlerBio() {
                 { id: 3, name: "instagram" },
                 { id: 4, name: "facebook" },
               ].map(({ id, name }) => (
-                <li className=" inline mr-4" key={id}>
+                <li className=" inline-block mb-10 mr-4" key={id}>
                   <a
                     href=""
                     className=" mt-10 uppercase bg-main lg:px-10 px-2 py-3 text-xl font-bold transition-all hover:opacity-90"
@@ -35,7 +35,7 @@ export default function WrestlerBio() {
           <div className=" my-10">
             <h2 className=" text-3xl font-bold my-3">BIO</h2>
             <div className=" bg-main w-1/4 h-2"></div>
-            <p className=" pr-60 mt-4 italic text-gray-400 font-medium">
+            <p className=" lg:pr-60 mt-4 italic text-gray-400 font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               assumenda, similique eveniet aliquam eligendi sequi ad quo esse
               dolor tempora quos. Quod iusto exercitationem id dolorum dolor
@@ -53,9 +53,9 @@ export default function WrestlerBio() {
                 { id: 1, name: "TITLES HELD" },
                 { id: 2, name: "EXAMPLE" },
                 { id: 3, name: "EXAMPLE" },
-                { id: 4, name: "ACW WORLD HEAVYWEIGHT CHAMPIONSHIP" },
+                { id: 4, name: "ACW WORLD HEAVYWEIGHT" },
               ].map(({ id, name }) => (
-                <li className=" inline mr-4" key={id}>
+                <li className=" inline-block mb-10 mr-4" key={id}>
                   <a
                     href=""
                     className=" mt-10 uppercase bg-main lg:px-10 px-2 py-3 text-xl font-bold transition-all hover:opacity-90"
@@ -70,7 +70,7 @@ export default function WrestlerBio() {
             <h2 className=" text-3xl font-bold my-3">MEDIA</h2>
             <div className=" bg-main w-1/4 h-2"></div>
             <div className=" grid grid-cols-2 mt-16 gap-16">
-              <div className=" col-span-1">
+              <div className=" lg:col-span-1 col-span-full">
                 <div className=" grid grid-cols-3">
                   <div
                     className="col-span-full cursor-pointer relative v-wrestler"
@@ -80,13 +80,13 @@ export default function WrestlerBio() {
                       });
                     }}
                   >
-                    <div className="absolute top-[40%] left-[240px] text-8xl v">
+                    <div className="absolute top-[35%] lg:left-[230px] left-[140px] text-8xl v">
                       <BsPlayCircleFill />
                     </div>
                     <picture>
                       <img
                         loading="lazy"
-                        src="https://i.im.ge/2022/08/14/OXJnBy.Vid4.png"
+                        src="../assets/Vid4.png"
                         className=" w-full"
                         alt=""
                       />
@@ -94,7 +94,7 @@ export default function WrestlerBio() {
                   </div>
                 </div>
               </div>
-              <div className=" col-span-1">
+              <div className=" lg:col-span-1 col-span-full">
                 <div className=" grid grid-cols-3 gap-4">
                   {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((id) => {
                     return (

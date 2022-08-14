@@ -13,29 +13,35 @@ body {
 
 .bg1 {
 
-  background-image: url("https://i.im.ge/2022/08/14/OXnUGm.Bg.png");
+  background-image: url("../public/assets/Bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg2 {
-  background-image: url("https://i.im.ge/2022/08/14/OXnECS.BG2x.png");
+  background-image: url("../public/assets/BG@2x.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg3 {
+  background-image: url("../public/assets/Bg3.png");
+}
+.bg4 {
+  background-image: url("../public/assets/Herobg.png");
+}
 
 .roster--viewAll,
 .our--roster {
-  background-image: url("https://i.im.ge/2022/08/14/OXnLbf.bg2.png");
+  background-image: url("../public/assets/bg2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .card {
-  background-image: url("https://i.im.ge/2022/08/14/OXnC7y.Image-bg.png");
+  background-image: url("../public/assets/Image\ bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

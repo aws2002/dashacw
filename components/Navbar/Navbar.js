@@ -48,7 +48,7 @@ export default function Navbar() {
             <div>
               <picture className=" flex justify-center ">
                 <img
-                  src="https://i.im.ge/2022/08/14/OXJlnW.ACW-Logo.png"
+                  src="./assets/ACW_Logo.png"
                   className="w-28 z-[100]"
                   alt=""
                 />

@@ -23,19 +23,21 @@ export default function CardRoster({ id }) {
     >
       <motion.div className=" card w-full relative" variants={imageAnimate}>
         <picture>
-          <img  loading="lazy" src="https://i.im.ge/2022/08/14/OXJ6YM.Image-1.png" alt="" />
+          <img loading="lazy" src="./assets/Image 1.png" alt="" />
         </picture>
-        <div className=" absolute bottom-5  lg:left-10 text-center lg:right-10 left-5 right-5">
-          <div className="name--roster p-2">
+        <div className=" absolute bottom-5  lg:left-10 text-center lg:right-10 left-3 right-3">
+          <div className="name--roster lg:p-2 p-1">
             <span className="font-medium lg:text-lg text-sm">
               JIMMY TURNBULL
             </span>
             {/* <i></i> */}
           </div>
         </div>
-        <div className="card--content absolute z-50 flex top-2/4 lg:left-10 lg:right-10 left-5 right-5">
+        <div className="card--content absolute z-50 flex top-2/4 lg:left-10 lg:right-10 left-3 right-3">
           <Link href="/wrestlerBio/1">
-            <a className=" bg-main btn lg:text-xl text-xs">VIEW PROFILE</a>
+            <a className=" bg-main py-2 w-full text-center font-medium   lg:text-xl text-xs">
+              VIEW PROFILE
+            </a>
           </Link>
         </div>
       </motion.div>

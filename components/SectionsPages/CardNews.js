@@ -6,7 +6,7 @@ export default function CardNews({ id }) {
       <picture className=" w-full">
         <img
           loading="lazy"
-          src="https://i.im.ge/2022/08/14/OXJWsW.img1.png"
+          src="./assets/img1.png"
           alt=""
         />
       </picture>

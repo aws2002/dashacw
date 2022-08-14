@@ -18,7 +18,7 @@ export default function HeroSectionWrestlerBio() {
     },
   };
   return (
-    <section className="bg-[url('https://i.im.ge/2022/08/14/OXJ3WP.Herobg.png')] pt-8 bg-bottom overflow-hidden bg-cover bg-no-repeat lg:h-[87vh]">
+    <section className="bg4 pt-8 bg-bottom overflow-hidden bg-cover bg-no-repeat lg:h-[87vh]">
       <div className=" container px-10">
         <div className=" grid grid-cols-2">
           <motion.div
@@ -27,26 +27,26 @@ export default function HeroSectionWrestlerBio() {
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
             layout
-            className=" col-span-1"
+            className=" lg:col-span-1 col-span-full lg:order-1 order-2"
           >
             <picture>
               <img
-                src="https://i.im.ge/2022/08/14/OXJ6YM.Image-1.png"
+                src="../assets/Image 1.png"
                 alt=""
               />
             </picture>
           </motion.div>
           <motion.div
-            className="col-span-1 px-16"
+            className="lg:col-span-1 col-span-full lg:order-2 order-1 lg:px-16 mb-4"
             animate="visible"
             variants={list}
             initial="hidden"
           >
             <div className=" border-[15px] border-main py-14 px-8">
-              <motion.h1 variants={list} className=" font-extrabold text-4xl">
+              <motion.h1 variants={list} className=" font-extrabold lg:text-4xl text-xl">
                 JUSTIN TURNBULL
               </motion.h1>
-              <ul className=" mt-6 text-2xl text-gray-300">
+              <ul className=" mt-6 text-lg text-gray-300">
                 {[
                   { id: 1, filed: "WEIGHT: ", dataFiled: "13O" },
                   { id: 2, filed: "HEIGHT:", dataFiled: "EXAMPLE" },
@@ -63,10 +63,10 @@ export default function HeroSectionWrestlerBio() {
                 ))}
               </ul>
               <div className=" mt-14">
-                <motion.h4 variants={list} className=" font-extrabold text-5xl">
+                <motion.h4 variants={list} className=" font-extrabold lg:text-5xl text-3xl">
                   ACW RECORD
                 </motion.h4>
-                <motion.p variants={list} className=" font-extrabold text-8xl">
+                <motion.p variants={list} className=" font-extrabold lg:text-8xl text-7xl">
                   5<span>-</span>1<span>-</span>0
                 </motion.p>
               </div>

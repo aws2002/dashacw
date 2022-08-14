@@ -7,7 +7,7 @@ export default function OurRoster() {
     <section className="our--roster mt-20 px-5 py-20">
       <div className="container">
         <div className=" text-center mb-10">
-          <h2 className=" font-extrabold text-4xl uppercase">
+          <h2 className=" font-extrabold lg:text-4xl text-3xl uppercase">
             <GiMuscleUp className=" inline text-5xl text-animation2" /> <span className=" border-b-4 border-main">OUR ROSTER</span>{" "}
             <GiMuscleUp className="text-5xl inline" />
           </h2>

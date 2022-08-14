@@ -5,7 +5,7 @@ export default function RosterViewAll() {
   return (
     <Layout>
       <section className="roster--viewAll py-20">
-        <div className=" container">
+        <div className=" container px-4">
           <div className=" grid grid-cols-4 gap-10">
             {[
               { id: "1" },
