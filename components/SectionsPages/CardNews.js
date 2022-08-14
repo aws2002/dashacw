@@ -5,7 +5,7 @@ export default function CardNews({ id }) {
     <div className="lg:col-span-1 col-span-full" key={id}>
       <picture className=" w-full">
         <img
-          loading="lazy"
+          
           src="./assets/img1.png"
           alt=""
         />
