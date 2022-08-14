@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import data from "../Data";
 export default function Footer() {
@@ -19,9 +20,18 @@ export default function Footer() {
           </div>
           <div className="lg:col-span-4 col-span-full mx-auto -mt-8 lg:order-2 order-3">
             <div>
-              <picture className=" flex justify-center">
-                <img src="../assets/ACW_Logo.png" className=" w-32" alt="" />
-              </picture>
+              <Link href="/">
+                <a>
+                  <picture className=" flex justify-center">
+                    <img
+                      src="../assets/ACW_Logo.png"
+                      className=" w-32"
+                      alt=""
+                    />
+                  </picture>
+                </a>
+              </Link>
+
               <ul className=" mt-2">
                 {data.footerLinks.social.map(({ id, icon }) => (
                   <li className=" inline-block mr-6" key={id}>

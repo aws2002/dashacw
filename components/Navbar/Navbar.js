@@ -23,7 +23,7 @@ export default function Navbar() {
       className={
         navActive
           ? " bg-black   w-full z-[1000] sticky -top-1 lg:py-0 py-3"
-          : "bg-black  border-main lg:py-0 py-4"
+          : "bg-black  border-main lg:py-0 py-2"
       }
     >
       <div className=" grid grid-cols-12">
@@ -33,7 +33,7 @@ export default function Navbar() {
               <motion.div
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.8 }}
-                className="lg:col-span-1 mb-2 col-span-2  inline-flex mr-3 bg-main w-12 h-12 justify-center items-center rounded-full"
+                className="lg:col-span-1 lg:mb-0 mb-2 col-span-2  inline-flex mr-3 bg-main w-12 h-12 justify-center items-center rounded-full"
                 key={id}
               >
                 <Link href="">
@@ -43,7 +43,7 @@ export default function Navbar() {
             ))}
           </div>
         </div>
-        <div className="col-span-4  mx-auto lg:top-5 top-10 relative cursor-pointer">
+        <div className="col-span-4 mx-auto lg:top-5 top-10 relative cursor-pointer">
           <Link href="/">
             <div>
               <picture className=" flex justify-center ">

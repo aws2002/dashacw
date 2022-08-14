@@ -25,7 +25,7 @@ export default function HeroSectionWrestlerBio() {
             animate={{ opacity: 1, scale: 1 }}
             initial={{ opacity: 0, scale: 0 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1 }}
             layout
             className=" col-span-1"
           >
@@ -34,7 +34,7 @@ export default function HeroSectionWrestlerBio() {
             </picture>
           </motion.div>
           <motion.div
-            className=" col-span-1"
+            className="col-span-1"
             animate="visible"
             variants={list}
             initial="hidden"

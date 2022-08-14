@@ -1,7 +1,11 @@
 import React from "react";
 import Layout from "../../components/Layouts/Layout";
+import { motion } from "framer-motion";
+import { BsPlayCircleFill } from "react-icons/bs";
+import Modal from "../../components/Tools/Modal";
 import HeroSectionWrestlerBio from "../../components/SectionsPages/HeroSectionWrestlerBio";
 export default function WrestlerBio() {
+  const [selectedId, setSelectedId] = React.useState(false);
   return (
     <Layout>
       <section className="wrestler--bio mb-20">
@@ -21,7 +25,9 @@ export default function WrestlerBio() {
                   <a
                     href=""
                     className=" mt-10 uppercase bg-main lg:px-10 px-2 py-3 text-2xl font-bold transition-all hover:opacity-90"
-                  >{name}</a>
+                  >
+                    {name}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -53,7 +59,9 @@ export default function WrestlerBio() {
                   <a
                     href=""
                     className=" mt-10 uppercase bg-main lg:px-10 px-2 py-3 text-2xl font-bold transition-all hover:opacity-90"
-                  >{name}</a>
+                  >
+                    {name}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -64,29 +72,52 @@ export default function WrestlerBio() {
             <div className=" grid grid-cols-2 mt-16 gap-16">
               <div className=" col-span-1">
                 <div className=" grid grid-cols-3">
-                  <div className="col-span-full">
-                      <picture>
-                        <img loading="lazy" src="../assets/Vid4.png" className=" w-full" alt="" />
-                      </picture>
+                  <div
+                    className="col-span-full cursor-pointer relative v-wrestler"
+                    onClick={() => {
+                      setSelectedId((pervValue) => {
+                        return true;
+                      });
+                    }}
+                  >
+                    <div className="absolute top-[40%] left-[240px] text-8xl v">
+                      <BsPlayCircleFill />
+                    </div>
+                    <picture>
+                      <img
+                        loading="lazy"
+                        src="../assets/Vid4.png"
+                        className=" w-full"
+                        alt=""
+                      />
+                    </picture>
                   </div>
                 </div>
               </div>
               <div className=" col-span-1">
                 <div className=" grid grid-cols-3 gap-4">
-                  {[1,2,3,4,5,6,7,8,9].map((id)=>{
-                    return <div className=" col-span-1" key={id}>
-                    <picture>
-                      <img loading="lazy" src="../assets/sans titre-0856.png" alt="" />
-                    </picture>
-                  </div>
+                  {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((id) => {
+                    return (
+                      <div className=" col-span-1" key={id}>
+                        <picture>
+                          <img
+                            loading="lazy"
+                            src="../assets/sans titre-0856.png"
+                            alt=""
+                          />
+                        </picture>
+                      </div>
+                    );
                   })}
-                  
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <Modal isToggled={selectedId} setToggle={setSelectedId}>
+        <motion.div>osama</motion.div>
+      </Modal>
     </Layout>
   );
 }

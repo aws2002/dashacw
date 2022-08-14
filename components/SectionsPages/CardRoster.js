@@ -18,7 +18,7 @@ export default function CardRoster({ id }) {
       whileInView={"onscreen"}
       viewport={{ once: true, amount: 0.5 }}
       transition={{ staggerChildren: 0.5 }}
-      className="lg:col-span-1 col-span-2"
+      className="lg:col-span-1 col-span-2 card--roster"
       key={id}
     >
       <motion.div className=" card w-full relative" variants={imageAnimate}>

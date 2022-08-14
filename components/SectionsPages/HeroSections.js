@@ -1,8 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Slider from "react-slick";
-import Image from "next/image";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
-import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 export default function HeroSections() {
   const sliderRef = useRef(null);
@@ -20,7 +18,7 @@ export default function HeroSections() {
       <motion.div
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
-        className="-mt-28 bg-slate-400 rounded-full w-3 h-3 btn-dots"
+        className="lg:-mt-28 -mt-80 bg-slate-400 rounded-full w-3 h-3 btn-dots"
       ></motion.div>
     ),
     responsive: [

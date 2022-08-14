@@ -39,7 +39,7 @@ export default function Modal({ isToggled, children, setToggle }) {
                 delay: 0.3
               }
             }}
-            className=" w-3/5 h-96 fixed m-auto inset-0 rounded-lg bg-white p-5 z-50"
+            className=" w-3/5 h-96 fixed m-auto inset-0 rounded-lg text-black bg-white p-5 z-50"
           >
             <motion.div
               initial={{
