@@ -8,17 +8,27 @@ export default function OurRoster() {
       <div className="container">
         <div className=" text-center mb-10">
           <h2 className=" font-extrabold lg:text-4xl text-3xl uppercase">
-            <GiMuscleUp className=" inline text-5xl text-animation2" /> <span className=" border-b-4 border-main">OUR ROSTER</span>{" "}
+            <GiMuscleUp className=" inline text-5xl text-animation2" />{" "}
+            <span className=" border-b-4 border-main">OUR ROSTER</span>{" "}
             <GiMuscleUp className="text-5xl inline" />
           </h2>
         </div>
         <div className=" grid-cols-4 grid gap-10">
-          {[{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }].map(({ id }) => {
+          {[
+            { id: 1 },
+            { id: 2 },
+            { id: 3 },
+            { id: 4 },
+            { id: 5 },
+            { id: 6 },
+            { id: 7 },
+            { id: 8 },
+          ].map(({ id }) => {
             return <CardRoster id={id} key={id} />;
           })}
           <div className=" col-span-4 text-center">
             <Link href="/rosterViewAll">
-              <a className="btn uppercase text-2xl">VIEW ALL</a>
+              <a className="btn uppercase lg:text-2xl text-xl">VIEW ALL</a>
             </Link>
           </div>
         </div>

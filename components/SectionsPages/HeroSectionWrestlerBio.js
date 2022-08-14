@@ -18,7 +18,7 @@ export default function HeroSectionWrestlerBio() {
     },
   };
   return (
-    <section className="bg4 pt-8 bg-bottom overflow-hidden bg-cover bg-no-repeat lg:h-[87vh]">
+    <section className="bg4 pt-8 bg-bottom overflow-hidden bg-cover bg-no-repeat ">
       <div className=" container px-10">
         <div className=" grid grid-cols-2">
           <motion.div

@@ -17,7 +17,7 @@ export default function LatestNews() {
           })}
           <div className=" col-span-2 text-center">
             <Link href="/newsArchive">
-              <a className=" btn uppercase text-2xl">View older news</a>
+              <a className=" btn uppercase lg:text-2xl text-xl">View older news</a>
             </Link>
           </div>
         </div>
