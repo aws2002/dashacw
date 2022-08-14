@@ -24,7 +24,7 @@ export default function Footer() {
                 <a>
                   <picture className=" flex justify-center">
                     <img
-                      src="http://drive.google.com/uc?export=view&id=1rjI53k419y8J-P_W_TLLeIjML4xoyx89"
+                      src="https://i.im.ge/2022/08/14/OXJlnW.ACW-Logo.png"
                       className=" w-32"
                       alt=""
                     />

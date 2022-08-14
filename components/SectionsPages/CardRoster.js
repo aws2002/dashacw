@@ -23,7 +23,7 @@ export default function CardRoster({ id }) {
     >
       <motion.div className=" card w-full relative" variants={imageAnimate}>
         <picture>
-          <img  loading="lazy" src="http://drive.google.com/uc?export=view&id=1TPQDyFvn_UvyksW6Mts56dKHxAEBnq4d" alt="" />
+          <img  loading="lazy" src="https://i.im.ge/2022/08/14/OXJ6YM.Image-1.png" alt="" />
         </picture>
         <div className=" absolute bottom-5  lg:left-10 text-center lg:right-10 left-5 right-5">
           <div className="name--roster p-2">
