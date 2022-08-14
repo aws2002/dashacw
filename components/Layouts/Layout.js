@@ -58,7 +58,7 @@ export default function Layout({ children, bg = "bg1" }) {
         </>
       );
       setComponents(components);
-    }, 3000);
+    }, 4000);
   });
   return (
     <div className={`content text-white ${bg}`}>

@@ -102,7 +102,7 @@ export default function WrestlerBio() {
                         <picture>
                           <img
                             loading="lazy"
-                            src="./assets/sans titre-0856.png"
+                            src="../assets/sans titre-0856.png"
                             alt=""
                           />
                         </picture>
