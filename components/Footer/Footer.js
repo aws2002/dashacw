@@ -29,7 +29,7 @@ export default function Footer() {
                 <a>
                   <picture className=" flex justify-center">
                     <img
-                      src="./assets/ACW_Logo.png"
+                      src="../assets/ACW_Logo.png"
                       className=" w-32"
                       alt=""
                     />

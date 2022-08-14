@@ -54,7 +54,7 @@ export default function LatestNews() {
                   <div className=" lg:col-span-4 col-span-6" key={id}>
                     <picture>
                       <img
-                        src="../assets/6.png"
+                        src="../assets/safad.png"
                         alt=""
                       />
                     </picture>
