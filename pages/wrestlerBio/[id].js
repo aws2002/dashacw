@@ -86,7 +86,7 @@ export default function WrestlerBio() {
                     <picture>
                       <img
                         loading="lazy"
-                        src="../assets/Vid4.png"
+                        src="http://drive.google.com/uc?export=view&id=1Odw7kgG0pyNsRpOwlGggvaYwsgiciCHv"
                         className=" w-full"
                         alt=""
                       />
@@ -102,7 +102,7 @@ export default function WrestlerBio() {
                         <picture>
                           <img
                             loading="lazy"
-                            src="../assets/sans titre-0856.png"
+                            src="http://drive.google.com/uc?export=view&id=1CwVwc0AnxEbECntoJmnJXS2M8b8X_QfF"
                             alt=""
                           />
                         </picture>

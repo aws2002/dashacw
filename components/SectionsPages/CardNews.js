@@ -4,7 +4,11 @@ export default function CardNews({ id }) {
   return (
     <div className="lg:col-span-1 col-span-full" key={id}>
       <picture className=" w-full">
-        <img loading="lazy" src="../assets/img1.png" alt="" />
+        <img
+          loading="lazy"
+          src="http://drive.google.com/uc?export=view&id=1hgY-09XdvbWgJm4Vr07Pp7n0cgUTc48V"
+          alt=""
+        />
       </picture>
       <div className=" p-5">
         <h4 className=" font-bold text-2xl mb-2">EXAMPLE TITLE</h4>

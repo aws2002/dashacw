@@ -18,7 +18,7 @@ export default function HeroSectionWrestlerBio() {
     },
   };
   return (
-    <section className="bg-[url('/assets/Herobg.png')] pt-8 bg-bottom overflow-hidden bg-cover bg-no-repeat lg:h-[87vh]">
+    <section className="bg-[url('http://drive.google.com/uc?export=view&id=1TJLBMv8S2Xq2rBWqSp0Ai8bNaRCNksit')] pt-8 bg-bottom overflow-hidden bg-cover bg-no-repeat lg:h-[87vh]">
       <div className=" container px-10">
         <div className=" grid grid-cols-2">
           <motion.div
@@ -30,7 +30,10 @@ export default function HeroSectionWrestlerBio() {
             className=" col-span-1"
           >
             <picture>
-              <img src="../assets/Image 1.png" alt="" />
+              <img
+                src="http://drive.google.com/uc?export=view&id=1TPQDyFvn_UvyksW6Mts56dKHxAEBnq4d"
+                alt=""
+              />
             </picture>
           </motion.div>
           <motion.div

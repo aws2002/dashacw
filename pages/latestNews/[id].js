@@ -8,7 +8,9 @@ export default function LatestNews() {
             <h1 className=" font-extrabold text-5xl">EXAMPLE TITLE</h1>
             <ul className=" mt-4 uppercase">
               <li className=" inline mr-4 ">example</li>
-              <li className=" inline mr-4  px-4 border-l-4 border-r-4 border-main">date</li>
+              <li className=" inline mr-4  px-4 border-l-4 border-r-4 border-main">
+                date
+              </li>
               <li className=" inline mr-4">time</li>
             </ul>
           </div>
@@ -16,12 +18,12 @@ export default function LatestNews() {
             {[
               {
                 id: 1,
-                img: "../assets/Image 2.png",
+                img: "http://drive.google.com/uc?export=view&id=1y6bCCG_aOVH_AOFJt-ADrNG3-fgJ9767",
                 ds1: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autemcupiditate, labore temporibus dicta expedita quod assumendaculpa vero commodi, sunt sequi sit debitis rerum suscipit!Expedita iusto illum mollitia. Soluta. Lorem ipsum dolor sitamet consectetur adipisicing elit. Nulla animi nostrumlaudantium pariatur atque minima magnam voluptates est fugiatfugit molestias optio magni aut, sunt architecto laboriosam,quae aliquid similique id sed hic deleniti minus obcaecati?Voluptatem in molestiae quis nemo ducimus. Tempore, nesciuntenim! Iusto est ab laborum quae! Lorem ipsum dolor sit ametconsectetur, adipisicing elit. Saepe, laudantium. Molestiae quiaeos sed saepe aspernatur eum qui ratione itaque nisi beataeofficiis at praesentium, debitis, unde consectetur iure soluta.",
               },
               {
                 id: 2,
-                img: "../assets/Image 2.png",
+                img: "http://drive.google.com/uc?export=view&id=1y6bCCG_aOVH_AOFJt-ADrNG3-fgJ9767",
                 ds1: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autemcupiditate, labore temporibus dicta expedita quod assumendaculpa vero commodi, sunt sequi sit debitis rerum suscipit!Expedita iusto illum mollitia. Soluta. Lorem ipsum dolor sitamet consectetur adipisicing elit. Nulla animi nostrumlaudantium pariatur atque minima magnam voluptates est fugiatfugit molestias optio magni aut, sunt architecto laboriosam,quae aliquid similique id sed hic deleniti minus obcaecati?Voluptatem in molestiae quis nemo ducimus. Tempore, nesciuntenim! Iusto est ab laborum quae! Lorem ipsum dolor sit ametconsectetur, adipisicing elit. Saepe, laudantium. Molestiae quiaeos sed saepe aspernatur eum qui ratione itaque nisi beataeofficiis at praesentium, debitis, unde consectetur iure soluta.",
                 ds2: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autemcupiditate, labore temporibus dicta expedita quod assumendaculpa vero commodi, sunt sequi sit debitis rerum suscipit!Expedita iusto illum mollitia. Soluta. Lorem ipsum dolor sitamet consectetur adipisicing elit. Nulla animi nostrumlaudantium pariatur atque minima magnam voluptates est fugiatfugit molestias optio magni aut, sunt architecto laboriosam,quae aliquid similique id sed hic deleniti minus obcaecati?Voluptatem in molestiae quis nemo ducimus. Tempore, nesciuntenim! Iusto est ab laborum quae! Lorem ipsum dolor sit ametconsectetur, adipisicing elit. Saepe, laudantium. Molestiae quiaeos sed saepe aspernatur eum qui ratione itaque nisi beataeofficiis at praesentium, debitis, unde consectetur iure soluta. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autemcupiditate, labore temporibus dicta expedita quod assumendaculpa vero commodi, sunt sequi sit debitis rerum suscipit!Expedita iusto illum mollitia. Soluta. Lorem ipsum dolor sitamet consectetur adipisicing elit. Nulla animi nostrumlaudantium pariatur atque minima magnam voluptates est fugiatfugit molestias optio magni aut, sunt architecto laboriosam,quae aliquid similique id sed hic deleniti minus obcaecati?Voluptatem in molestiae quis nemo ducimus. Tempore, nesciuntenim! Iusto est ab laborum quae! Lorem ipsum dolor sit ametconsectetur, adipisicing elit. Saepe, laudantium. Molestiae quiaeos sed saepe aspernatur eum qui ratione itaque nisi beataeofficiis at praesentium, debitis, unde consectetur iure soluta.",
               },
@@ -50,7 +52,10 @@ export default function LatestNews() {
                 {[1, 2, 3, 4, 5, 6].map((id) => (
                   <div className=" lg:col-span-4 col-span-6" key={id}>
                     <picture>
-                      <img src="../assets/6.png" alt="" />
+                      <img
+                        src="http://drive.google.com/uc?export=view&id=1MbcP5iAbcbGheMv7CudcZUhiy1WL-8DK"
+                        alt=""
+                      />
                     </picture>
                   </div>
                 ))}

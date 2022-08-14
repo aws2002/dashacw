@@ -15,7 +15,7 @@ export default function Layout({ children, bg = "bg1" }) {
     <div className={`content text-white ${bg}`}>
       <Navbar />
       <motion.div
-        className=" fixed lg:top-[100px] top-[132px] left-0 right-0 bg-main z-50 h-[10px]"
+        className=" fixed lg:top-[87px] top-[132px] left-0 right-0 bg-main z-50 h-[10px]"
         style={{ scaleX }}
       />
 

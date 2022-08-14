@@ -7,7 +7,7 @@ export default function Sponser() {
           {[1,2,3,4].map((id)=>(
             <div className=" lg:col-span-1 col-span-2" key={id}>
             <picture>
-              <img src="./assets/arwawg.png" alt="" />
+              <img src="http://drive.google.com/uc?export=view&id=1nuHjeyIbs5y1WtZTu6EVeD81i-aTqOPV" alt="" />
             </picture>
           </div>
           ))}

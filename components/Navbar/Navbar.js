@@ -46,10 +46,11 @@ export default function Navbar() {
         <div className="col-span-4 mx-auto lg:top-5 top-10 relative cursor-pointer">
           <Link href="/">
             <div>
+            
               <picture className=" flex justify-center ">
                 <img
-                  src="../assets/ACW_Logo.png"
-                  className="w-32 z-[100]"
+                  src="http://drive.google.com/uc?export=view&id=1rjI53k419y8J-P_W_TLLeIjML4xoyx89"
+                  className="w-28 z-[100]"
                   alt=""
                 />
               </picture>
@@ -75,7 +76,7 @@ export default function Navbar() {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <Menu.Items className=" -z-50 top-[75px] py-10 w-screen absolute px-1 right-0 mt-2 shadow-lg bg-black ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <Menu.Items className=" -z-50 top-[65px] py-10 w-screen absolute px-1 right-0 mt-2 shadow-lg bg-black ring-1 ring-black ring-opacity-5 focus:outline-none">
                   {[
                     { id: 1, href: "/", titel: "Home" },
                     { id: 2, href: "/fqa", titel: "fqa" },

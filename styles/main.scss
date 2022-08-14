@@ -12,14 +12,15 @@ body {
 }
 
 .bg1 {
-  background-image: url("../public/assets/Bg.png");
+
+  background-image: url("http://drive.google.com/uc?export=view&id=1akx08bh22xd_4R04kZcrnQCbWN6xC-df");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg2 {
-  background-image: url("../public/assets/BG@2x.png");
+  background-image: url("http://drive.google.com/uc?export=view&id=181w8WNFo2BNLEVfmWTLyXpWLn3pn13k7");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,14 +28,14 @@ body {
 
 .roster--viewAll,
 .our--roster {
-  background-image: url("../public/assets/bg2.png");
+  background-image: url("http://drive.google.com/uc?export=view&id=13VDI_x1kknQIjqVAQq_Geig0_rAMxw7H");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .card {
-  background-image: url("../public/assets/Image\ bg.png");
+  background-image: url("http://drive.google.com/uc?export=view&id=1P4tMs88HnkPE6vBQS8PI6uqxcYveKWH9");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -128,11 +129,13 @@ body {
   position: relative;
   text-align: center;
 }
-.card--roster .btn{
+
+.card--roster .btn {
   width: 100%;
   padding: 10px 20px;
-  
+
 }
+
 .btn::after {
   --slice-0: inset(50% 50% 50% 50%);
   --slice-1: inset(80% -6px 0 0);
@@ -218,7 +221,7 @@ body {
   transition: 0.5s;
   color: #fff;
   background-color: #000;
-  background: linear-gradient(to left , #000, #151515d0);
+  background: linear-gradient(to left, #000, #151515d0);
 }
 
 .card:hover .name--roster {
@@ -278,6 +281,7 @@ body {
   width: 30px;
   left: 80%;
 }
+
 ::-webkit-scrollbar {
   width: 15px;
   background: #000;
@@ -286,11 +290,13 @@ body {
     background: #411061;
   }
 }
-.v-wrestler:hover .v{
+
+.v-wrestler:hover .v {
   display: block;
-  
+
 }
-.v-wrestler .v{
+
+.v-wrestler .v {
   display: none;
-  
+
 }
