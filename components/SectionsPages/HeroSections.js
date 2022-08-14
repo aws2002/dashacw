@@ -18,7 +18,7 @@ export default function HeroSections() {
       <motion.div
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
-        className="lg:-mt-28 -mt-[350px] bg-slate-400 rounded-full w-3 h-3 btn-dots"
+        className="lg:-mt-16 -mt-[350px] bg-slate-400 rounded-full w-3 h-3 btn-dots"
       ></motion.div>
     ),
     responsive: [
@@ -57,7 +57,7 @@ export default function HeroSections() {
     },
   ];
   return (
-    <section className="heroSections relative bg-bottom  mb-10 bg-[url('https://i.im.ge/2022/08/14/OXncKK.Bg3.png')] overflow-hidden bg-cover bg-no-repeat lg:h-[79vh]">
+    <section className="heroSections relative bg-bottom  mb-10 bg-[url('https://i.im.ge/2022/08/14/OXncKK.Bg3.png')] overflow-hidden bg-cover bg-no-repeat lg:h-[87vh]">
       <div className=" container">
         <motion.div
           whileHover={{ scale: 1.2 }}
