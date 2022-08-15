@@ -58,7 +58,7 @@ export default function HeroSections() {
     },
   ];
   return (
-    <section className="heroSections relative bg-bottom  mb-10 bg3 overflow-hidden bg-cover bg-no-repeat lg:h-[81vh] h-[82vh]">
+    <section className="heroSections relative bg-bottom  mb-10 bg3 overflow-hidden bg-cover bg-no-repeat lg:h-[81vh] h-[76vh]">
       <div className=" container">
         <motion.div
           whileHover={{ scale: 1.2 }}
