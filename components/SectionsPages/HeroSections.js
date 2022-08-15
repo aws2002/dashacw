@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
 export default function HeroSections() {
   const sliderRef = useRef(null);
   const settings = {
@@ -59,7 +58,7 @@ export default function HeroSections() {
     },
   ];
   return (
-    <section className="heroSections relative bg-bottom  mb-10 bg3 overflow-hidden bg-cover bg-no-repeat lg:h-[87vh] h-[82vh]">
+    <section className="heroSections relative bg-bottom  mb-10 bg3 overflow-hidden bg-cover bg-no-repeat lg:h-[81vh] h-[82vh]">
       <div className=" container">
         <motion.div
           whileHover={{ scale: 1.2 }}
@@ -84,10 +83,15 @@ export default function HeroSections() {
           {dataHeroSections.map(({ id, img, name, text, saveUp }) => (
             <div key={id}>
               <div className=" grid grid-cols-12">
-                <div className=" lg:col-span-3 lg:order-1 order-2 col-span-6 -mr-10">
-                  <picture>
-                    <Image width={1000} height={1400} src="/assets/Image 1.png" alt=""/>
-                  </picture>
+                <div className=" lg:col-span-3 lg:order-1 w-full  order-2 col-span-6 -mr-10">
+                  <Image
+                    src={"/assets/Image 1.png"}
+                    width={440}
+                    height={610}
+                    alt=""
+                    objectFit={"cover"}
+                    objectPosition="center"
+                  />
                 </div>
                 <div className=" lg:col-span-6 mb-10 col-span-full  text-center lg:order-2 order-1">
                   <h1 className=" lg:text-7xl text-[35px] mb-5 text-white font-extrabold  letter-spacing">
@@ -101,10 +105,14 @@ export default function HeroSections() {
                   </button>
                 </div>
                 <div className=" lg:col-span-3 col-span-6 lg:order-3 order-3 -ml-10">
-                  <picture>
-                  <Image width={1000} height={1400} src="/assets/R-Image@2x.png" alt=""/>
-                    {/* <img src="./assets/R-Image@2x.png" className="h-full" alt="" /> */}
-                  </picture>
+                  <Image
+                    src={"/assets/R-Image@2x.png"}
+                    width={440}
+                    height={610}
+                    alt=""
+                    objectFit={"cover"}
+                    objectPosition="center"
+                  />
                 </div>
               </div>
             </div>

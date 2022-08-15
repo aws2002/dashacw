@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import data from "../Data";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer className=" bg-black pb-5 px-4">
@@ -27,16 +27,15 @@ export default function Footer() {
           <div className="lg:col-span-4 col-span-full mx-auto -mt-8 lg:order-2 order-3">
             <div>
               <Link href="/">
-                <a>
-                  <picture className=" flex justify-center">
-                    <Image
-                      src="/assets/ACW_Logo.png"
-                      className=" w-32"
-                      alt=""
-                      width={111}
-                      height={91}
-                    />
-                  </picture>
+                <a className="flex justify-center">
+                  <Image
+                    src={"/assets/ACW_Logo.png"}
+                    width={115}
+                    height={100}
+                    alt=""
+                    objectFit={"cover"}
+                    objectPosition="center"
+                  />
                 </a>
               </Link>
 

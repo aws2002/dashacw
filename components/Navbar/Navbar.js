@@ -3,8 +3,8 @@ import data from "../Data";
 import { BiMenu } from "react-icons/bi";
 import { Menu, Transition } from "@headlessui/react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import Image from "next/image";
+import { motion } from "framer-motion";
 export default function Navbar() {
   const [navActive, setnavActive] = useState(false);
 
@@ -44,19 +44,18 @@ export default function Navbar() {
             ))}
           </div>
         </div>
-        <div className="col-span-4 mx-auto lg:top-5 top-10 relative cursor-pointer">
+        <div className="col-span-4 mx-auto lg:top-5 top-10 relative z-[100] cursor-pointer">
           <Link href="/">
-            <div>
-              <picture className=" flex justify-center ">
-                <Image
-                  src="/assets/ACW_Logo.png"
-                  className=" w-32 z-[100]"
-                  alt=""
-                  width={111}
-                  height={91}
-                />
-              </picture>
-            </div>
+            <a className="">
+              <Image
+                src={"/assets/ACW_Logo.png"}
+                width={115}
+                height={100}
+                alt=""
+                objectFit={"cover"}
+                objectPosition="center"
+              />
+            </a>
           </Link>
         </div>
         <div className="col-span-4  rtl flex items-center">
