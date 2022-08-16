@@ -113,12 +113,12 @@ export default function Navbar() {
               </div>
             </div>
             <div className="lg:col-span-10 col-span-full flex items-center lg:px-4 lg:order-2 order-1">
-              <ul className=" uppercase font-bold text-lg">
-                <li className=" inline-block ml-2 cursor-pointer">ES</li>
-                <li className=" inline-block ml-2 cursor-pointer border-x-4 border-main px-3">
+              <ul className=" uppercase font-bold text-lg text-gray-300">
+                <li className=" inline-block ml-2 cursor-pointer transition-all hover:text-white">ES</li>
+                <li className=" inline-block ml-2 cursor-pointer border-x-4 transition-all hover:text-white border-main px-3">
                   FR
                 </li>
-                <li className=" inline-block ml-2 cursor-pointer">EN</li>
+                <li className=" inline-block ml-2 cursor-pointer transition-all hover:text-white">EN</li>
               </ul>
             </div>
           </div>

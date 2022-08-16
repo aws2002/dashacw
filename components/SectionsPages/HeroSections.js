@@ -8,7 +8,7 @@ export default function HeroSections() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -19,7 +19,7 @@ export default function HeroSections() {
       <motion.div
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
-        className="lg:-mt-32 -mt-[360px] bg-slate-400 rounded-full w-3 h-3 btn-dots"
+        className="lg:-mt-20 -mt-[360px] bg-slate-400 rounded-full w-3 h-3 btn-dots"
       ></motion.div>
     ),
     responsive: [
@@ -78,7 +78,7 @@ export default function HeroSections() {
         </motion.div>
       </div>
 
-      <div className=" grid grid-cols-1 lg:pt-16 pt-8">
+      <div className=" grid grid-cols-1 ">
         <Slider {...settings} ref={sliderRef}>
           {dataHeroSections.map(({ id, img, name, text, saveUp }) => (
             <div key={id}>
@@ -94,7 +94,7 @@ export default function HeroSections() {
                     priority
                   />
                 </div>
-                <div className=" lg:col-span-6 mb-16 col-span-full  text-center lg:order-2 order-1">
+                <div className=" lg:col-span-6 mb-16 mt-14 col-span-full  text-center lg:order-2 order-1">
                   <h1 className=" lg:text-7xl text-[35px] mb-5 text-white font-extrabold  letter-spacing">
                     JUSTIN TURNBULL
                     <span className="block text-main text-shadow">VS</span>
