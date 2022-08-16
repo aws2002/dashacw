@@ -69,7 +69,7 @@ export default function Navbar() {
                   >
                     <div>
                       <Menu.Button className="inline-flex w-full items-center justify-center rounded-md transition-all px-4 py-2 text-sm hover:bg-opacity-90">
-                        <span className="uppercase text-5xl lg:mx-1 mx-8">
+                        <span className="uppercase text-5xl lg:mx-1 mx-4">
                           <BiMenu />
                         </span>
                       </Menu.Button>
@@ -110,7 +110,7 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-10 col-span-full flex items-center px-4 lg:order-2 order-1">
+            <div className="lg:col-span-10 col-span-full flex items-center lg:px-4 lg:order-2 order-1">
               <ul className=" uppercase font-bold text-lg">
                 <li className=" inline-block ml-2 cursor-pointer">ES</li>
                 <li className=" inline-block ml-2 cursor-pointer border-x-4 border-main px-3">
