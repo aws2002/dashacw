@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 export default function HeroSectionWrestlerBio() {
   const list = {
     visible: {
@@ -29,12 +30,14 @@ export default function HeroSectionWrestlerBio() {
             layout
             className=" lg:col-span-1 col-span-full lg:order-1 order-2"
           >
-            <picture>
-              <img
-                src="../assets/Image 1.png"
-                alt=""
-              />
-            </picture>
+            <Image
+              src={"/assets/Image 1.png"}
+              width={440}
+              height={610}
+              alt=""
+              objectFit={"cover"}
+              objectPosition="center"
+            />
           </motion.div>
           <motion.div
             className="lg:col-span-1 col-span-full lg:order-2 order-1 lg:px-16 mb-4"
@@ -43,7 +46,10 @@ export default function HeroSectionWrestlerBio() {
             initial="hidden"
           >
             <div className=" border-[15px] border-main py-14 px-8">
-              <motion.h1 variants={list} className=" font-extrabold lg:text-4xl text-xl">
+              <motion.h1
+                variants={list}
+                className=" font-extrabold lg:text-4xl text-xl"
+              >
                 JUSTIN TURNBULL
               </motion.h1>
               <ul className=" mt-6 text-lg text-gray-300">
@@ -63,10 +69,16 @@ export default function HeroSectionWrestlerBio() {
                 ))}
               </ul>
               <div className=" mt-14">
-                <motion.h4 variants={list} className=" font-extrabold lg:text-5xl text-3xl">
+                <motion.h4
+                  variants={list}
+                  className=" font-extrabold lg:text-5xl text-3xl"
+                >
                   ACW RECORD
                 </motion.h4>
-                <motion.p variants={list} className=" font-extrabold lg:text-8xl text-7xl">
+                <motion.p
+                  variants={list}
+                  className=" font-extrabold lg:text-8xl text-7xl"
+                >
                   5<span>-</span>1<span>-</span>0
                 </motion.p>
               </div>
