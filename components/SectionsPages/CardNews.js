@@ -4,9 +4,7 @@ import Image from "next/image";
 export default function CardNews({ id }) {
   return (
     <div className="lg:col-span-1 col-span-full" key={id}>
-      <picture>
-        <img src={"./assets/img1.png"} alt="" />
-      </picture>
+      <Image width={600} height={300} src={"/assets/img1.png"} alt="" />
 
       <div className=" p-5">
         <h4 className=" font-bold text-2xl mb-2">EXAMPLE TITLE</h4>
