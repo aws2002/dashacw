@@ -19,7 +19,7 @@ export default function HeroSections() {
       <motion.div
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
-        className="lg:-mt-20 -mt-[360px] bg-slate-400 rounded-full w-3 h-3 btn-dots"
+        className="lg:-mt-20 -mt-[360px] bg-slate-400 rounded-full w-4 h-4 btn-dots"
       ></motion.div>
     ),
     responsive: [
