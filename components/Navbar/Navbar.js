@@ -87,6 +87,8 @@ export default function Navbar() {
                         {[
                           { id: 1, href: "/", titel: "Home" },
                           { id: 2, href: "/fqa", titel: "fqa" },
+                          { id: 3, href: "/fqa", titel: "LOREM" },
+                          { id: 4, href: "/fqa", titel: "IPSUM" },
                         ].map(({ id, href, titel }) => (
                           <div className="pt-2" key={id}>
                             <Menu.Item>

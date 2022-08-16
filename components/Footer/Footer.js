@@ -70,6 +70,9 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+        <div className=" text-center uppercase mt-2">
+          <p className=" text-sm font-light italic">COPYRIGHT © 2022 KM2 ESPORTS CORP. ALL RIGHTS RESERVED</p>
+        </div>
       </div>
     </footer>
   );
