@@ -25,12 +25,13 @@ export default function CardRoster({ id }) {
         <div className=" relative top-2">
           <Image
             src={"/assets/Image 1.png"}
+            alt=""
             width={315}
             height={450}
-            alt=""
-            objectFit={"cover"}
-            objectPosition="center"
+            loading="eager"
+            priority
           />
+          
         </div>
         <div className=" absolute bottom-5  lg:left-8 text-center lg:right-8 left-3 right-3">
           <div className="name--roster lg:p-2 p-1">

@@ -36,10 +36,12 @@ export default function LatestNews() {
                 <picture>
                   <Image
                     layout="responsive"
-                    width={400}
-                    height={180}
                     src={img}
                     alt=""
+                    width={400}
+                    height={180}
+                    loading="eager"
+                    priority
                   />
                 </picture>
                 <p className=" mt-14 lg:px-24 text-gray-400 font-medium text-center">
@@ -62,12 +64,15 @@ export default function LatestNews() {
                 {[1, 2, 3, 4, 5, 6].map((id) => (
                   <div className=" lg:col-span-4 col-span-6" key={id}>
                     <Image
-                    layout="responsive"
-                    width={200}
-                    height={120}
-                    src={"/assets/safad.png"}
-                    alt=""
-                  />
+                      layout="responsive"
+                      src={"/assets/safad.png"}
+                      alt=""
+                      width={200}
+                      height={120}
+                      loading="eager"
+                      priority
+                    />
+
                     {/* <picture>
                       <img src="../assets/safad.png" alt="" />
                     </picture> */}

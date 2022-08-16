@@ -16,10 +16,6 @@ export default function HeroSections() {
     pauseOnHover: true,
     appendDots: (dots) => <ul> {dots} </ul>,
     customPaging: () => (
-
-
-
-      
       <motion.div
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
@@ -90,11 +86,11 @@ export default function HeroSections() {
                 <div className=" lg:col-span-3 lg:order-1 w-full  order-2 col-span-6 -mr-10">
                   <Image
                     src={"/assets/Image 1.png"}
+                    alt=""
                     width={440}
                     height={610}
-                    alt=""
-                    objectFit={"cover"}
-                    objectPosition="center"
+                    loading="eager"
+                    priority
                   />
                 </div>
                 <div className=" lg:col-span-6 mb-16 col-span-full  text-center lg:order-2 order-1">
@@ -111,11 +107,11 @@ export default function HeroSections() {
                 <div className=" lg:col-span-3 col-span-6 lg:order-3 order-3 -ml-10">
                   <Image
                     src={"/assets/R-Image@2x.png"}
+                    alt=""
                     width={440}
                     height={610}
-                    alt=""
-                    objectFit={"cover"}
-                    objectPosition="center"
+                    loading="eager"
+                    priority
                   />
                 </div>
               </div>

@@ -30,11 +30,11 @@ export default function Footer() {
                 <a className="flex justify-center">
                   <Image
                     src={"/assets/ACW_Logo.png"}
+                    alt="logo"
                     width={115}
                     height={100}
-                    alt=""
-                    objectFit={"cover"}
-                    objectPosition="center"
+                    loading="eager"
+                    priority
                   />
                 </a>
               </Link>
