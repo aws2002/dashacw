@@ -14,9 +14,9 @@ export default function CardNews({ id }) {
       />
       <div className=" p-5">
         <h4 className=" font-bold text-2xl mb-2">EXAMPLE TITLE</h4>
-        <p className=" font-medium mb-6 text-gray-400 italic">
+        <p className=" font-normal mb-6 text-gray-400 italic lg:pr-28">
           lorem ipsum is simply dummy text of the printing and typesetting
-          industry lorem ipsum has been the industry standard dummy text ever
+          industry lorem ipsum has been the industrys standard dummy text ever
           since th 1500s, when an unknown printer took
         </p>
         <Link href="/latestNews/1">

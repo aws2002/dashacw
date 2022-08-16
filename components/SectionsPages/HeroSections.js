@@ -58,12 +58,12 @@ export default function HeroSections() {
     },
   ];
   return (
-    <section className="heroSections relative bg-bottom  bg3 overflow-hidden bg-cover bg-no-repeat lg:h-[82vh] h-[76vh]">
+    <section className="heroSections relative bg-bottom  bg3  bg-cover bg-no-repeat overflow-hidden">
       <div className=" container">
         <motion.div
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
-          className=" z-50 bg-white absolute cursor-pointer lg:top-1/2 top-[54%] lg:left-24 left-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
+          className=" z-50 bg-white absolute cursor-pointer lg:top-1/2 top-[44%] lg:left-24 left-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
           onClick={() => sliderRef.current.slickPrev()}
         >
           <GrFormPrevious className=" text-3xl " />
@@ -71,7 +71,7 @@ export default function HeroSections() {
         <motion.div
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
-          className=" z-50 bg-white absolute cursor-pointer lg:top-1/2 top-[54%] lg:right-24 right-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
+          className=" z-50 bg-white absolute cursor-pointer lg:top-1/2 top-[44%] lg:right-24 right-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
           onClick={() => sliderRef.current.slickPrev()}
         >
           <GrFormNext className=" text-3xl " />
@@ -83,12 +83,13 @@ export default function HeroSections() {
           {dataHeroSections.map(({ id, img, name, text, saveUp }) => (
             <div key={id}>
               <div className=" grid grid-cols-12">
-                <div className=" lg:col-span-3 lg:order-1 w-full  order-2 col-span-6 -mr-10">
+                <div className=" lg:col-span-3 lg:order-1 w-full  order-2 col-span-6 -mr-10 relative top-8">
                   <Image
-                    src={"/assets/Image 1.png"}
+                    src={"/assets/L-image@2x.png"}
                     alt=""
                     width={440}
-                    height={610}
+                    height={710}
+                    objectFit="cover"
                     loading="eager"
                     priority
                   />
@@ -104,12 +105,13 @@ export default function HeroSections() {
                     MORE INFO
                   </button>
                 </div>
-                <div className=" lg:col-span-3 col-span-6 lg:order-3 order-3 -ml-10">
+                <div className=" lg:col-span-3 col-span-6 lg:order-3 order-3 -ml-10 relative top-8">
                   <Image
                     src={"/assets/R-Image@2x.png"}
                     alt=""
                     width={440}
-                    height={610}
+                    height={640}
+                    objectFit="cover"
                     loading="eager"
                     priority
                   />
