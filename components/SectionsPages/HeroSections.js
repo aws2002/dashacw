@@ -74,7 +74,7 @@ export default function HeroSections() {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
           className=" z-50  absolute cursor-pointer lg:top-1/2 top-[41%] lg:right-4 right-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
-          onClick={() => sliderRef.current.slickPrev()}
+          onClick={() => sliderRef.current.slickNext()}
         >
           <picture>
             <img src="./assets/R-Arrow.png" className=" lg:w-10 w-7" alt="" />
