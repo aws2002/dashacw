@@ -67,7 +67,7 @@ export default function HeroSections() {
           onClick={() => sliderRef.current.slickPrev()}
         >
           <picture>
-            <img src="./assets/l-Arrow.png" className=" lg:w-10 w-7" alt="" />
+            <img src="./assets/L-Arrow.png" className=" lg:w-10 w-7" alt="" />
           </picture>
         </motion.div>
         <motion.div

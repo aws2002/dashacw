@@ -8,6 +8,7 @@ export default function OurRoster() {
       <div className="container">
         <div className=" text-center mb-10">
           <h2 className=" font-extrabold lg:text-4xl text-2xl uppercase">
+            
             <GiMuscleUp className=" inline text-5xl text-animation2" />{" "}
             <span className=" border-b-4 border-main pb-2 font-universalSerif tracking-wider	">OUR ROSTER</span>{" "}
             <GiMuscleUp className="text-5xl inline" />
@@ -20,7 +21,7 @@ export default function OurRoster() {
             { id: 3 ,name:"EXAMPLE",img:""},
             { id: 4 ,name:"EXAMPLE",img:""},
             { id: 5 ,name:"EXAMPLE",img:""},
-            { id: 6 ,name:"EXAMPLE",img:""},
+            { id: 6 ,name:"EXAMPLE",img:"/assets/Image 1.png"},
             { id: 7 ,name:"EXAMPLE",img:""},
             { id: 8 ,name:"EXAMPLE",img:""},
           ].map(({ id,name,img }) => {

@@ -21,9 +21,10 @@ export default function CardRoster({ id,name,img }) {
       className="lg:col-span-1 col-span-2 card--roster"
       key={id}
     >
-      <motion.div className="card w-full" variants={imageAnimate}>
-        <div className=" relative top-2">
-          <Image
+      <motion.div className="card w-full h-full relative z-50" variants={imageAnimate}>
+        
+        <div className="relative">
+          {/* <Image
             src={img}
             alt=""
             width={315}
@@ -31,8 +32,10 @@ export default function CardRoster({ id,name,img }) {
             loading="eager"
             objectFit="cover"
             priority
-          />
-          
+          /> */}
+          <picture>
+            <img src={img} alt="" />
+          </picture>
         </div>
         <div className=" absolute bottom-5  lg:left-8 text-center lg:right-8 left-3 right-3">
           <div className="name--roster lg:p-2 p-1">

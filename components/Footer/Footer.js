@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 export default function Footer() {
   return (
-    <footer className=" bg-black pb-5 px-4">
+    <footer className=" bg-black pb-5 lg:px-0 px-4">
       <div className=" container">
         <div className=" grid grid-cols-12">
           <div className="lg:col-span-4 col-span-6  py-8 lg:order-1 order-1">
@@ -70,9 +70,11 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className=" text-center uppercase mt-2">
-          <p className=" text-sm font-light italic">COPYRIGHT © 2022 KM2 ESPORTS CORP. ALL RIGHTS RESERVED</p>
-        </div>
+      </div>
+      <div className=" text-center uppercase mt-2 border-t-2 pt-2 border-[#9B9B9B]">
+        <p className=" text-sm font-light italic">
+          COPYRIGHT © 2022 KM2 ESPORTS CORP. ALL RIGHTS RESERVED
+        </p>
       </div>
     </footer>
   );
