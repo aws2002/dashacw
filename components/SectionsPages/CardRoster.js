@@ -39,13 +39,13 @@ export default function CardRoster({ id,name,img }) {
         </div>
         <div className=" absolute bottom-5  lg:left-8 text-center lg:right-8 left-3 right-3">
           <div className="name--roster lg:p-2 p-1">
-            <span className="font-medium lg:text-lg text-xs uppercase">{name}</span>
+            <span className="font-medium lg:text-lg text-xs uppercase font-universalSerif tracking-wider">{name}</span>
             {/* <i></i> */}
           </div>
         </div>
         <div className="card--content absolute z-50 flex top-2/4 lg:left-8 lg:right-8 left-3 right-3">
           <Link href="/wrestlerBio/1">
-            <a className=" bg-main py-2 w-full text-center font-medium   lg:text-xl text-xs">
+            <a className=" bg-main py-2 w-full text-center font-medium font-universalSerif tracking-wider  lg:text-xl text-xs">
               VIEW PROFILE
             </a>
           </Link>

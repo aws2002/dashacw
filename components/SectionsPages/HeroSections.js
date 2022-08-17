@@ -104,7 +104,7 @@ export default function HeroSections() {
                     <span className="block text-main text-shadow">VS</span>
                     BRIAN PILLMAN JR
                   </h1>
-                  <button className="btn text-2xl border border-b-4 border-black">
+                  <button className="btn text-2xl border border-b-4 font-medium border-black font-universalSerif tracking-wider">
                     {" "}
                     MORE INFO
                   </button>

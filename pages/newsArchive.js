@@ -10,7 +10,7 @@ export default function NewsArchive() {
         <div className=" text-center mb-20">
           <h2 className=" font-extrabold lg:text-4xl text-3xl uppercase">
             <GiMuscleUp className=" inline text-5xl text-animation2" />{" "}
-            <span className=" border-b-4 border-main pb-2 uppercase">News archive</span>{" "}
+            <span className=" border-b-4 border-main pb-2 uppercase font-universalSerif tracking-wider">News archive</span>{" "}
             <GiMuscleUp className="text-5xl inline" />
           </h2>
         </div>

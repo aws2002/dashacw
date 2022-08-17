@@ -28,7 +28,7 @@ export default function HeroSectionWrestlerBio() {
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
             layout
-            className=" lg:col-span-1 col-span-full lg:order-1 order-2"
+            className=" lg:col-span-1 col-span-full lg:order-1 order-2 relative top-2"
           >
             <Image
               src={"/assets/Image 1.png"}

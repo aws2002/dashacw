@@ -90,7 +90,7 @@ export default function Navbar() {
                       <Menu.Items className=" z-50 top-[65px] py-10 w-screen absolute px-1 right-0 mt-2 shadow-lg bg-black ring-1 ring-black ring-opacity-5 focus:outline-none">
                         {[
                           { id: 1, href: "/", titel: "Home" },
-                          { id: 2, href: "/fqa", titel: "fqa" },
+                          { id: 2, href: "/fqa", titel: "faq" },
                           { id: 3, href: "", titel: "LOREM" },
                           { id: 4, href: "", titel: "IPSUM" },
                         ].map(({ id, href, titel }) => (
@@ -102,7 +102,7 @@ export default function Navbar() {
                                     "group cursor-pointer text-center rounded-md px-2 py-2 text-sm font-semibold"
                                   }
                                 >
-                                  <p className=" text-2xl font-bold transition-all hover:text-main uppercase">
+                                  <p className=" text-xl font-bold transition-all font-universalSerif tracking-wider hover:text-main uppercase">
                                     {titel}
                                   </p>
                                 </div>
@@ -117,7 +117,7 @@ export default function Navbar() {
               </div>
             </div>
             <div className="lg:col-span-10 col-span-full flex items-center lg:px-4 lg:order-2 pr-3 order-1">
-              <ul className=" uppercase font-bold text-lg text-gray-300">
+              <ul className=" uppercase font-bold text-lg text-gray-300 font-universalSerif tracking-wider">
                 <li className=" inline-block ml-1 cursor-pointer transition-all hover:text-white">
                   ES
                 </li>

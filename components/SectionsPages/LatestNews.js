@@ -8,7 +8,9 @@ export default function LatestNews() {
         <div className=" text-center mb-10">
           <h2 className=" font-extrabold lg:text-4xl text-2xl uppercase">
             <GiMuscleUp className=" inline text-5xl" />{" "}
-            <span className="border-b-4 border-main pb-2 font-universalSerif tracking-wider">Latest news</span>{" "}
+            <span className="border-b-4 border-main pb-2 font-universalSerif tracking-wider">
+              Latest news
+            </span>{" "}
             <GiMuscleUp className=" inline text-5xl" />
           </h2>
         </div>
@@ -18,7 +20,7 @@ export default function LatestNews() {
           })}
           <div className=" col-span-2 text-center">
             <Link href="/newsArchive">
-              <a className=" btn uppercase lg:text-2xl text-xl">
+              <a className=" btn uppercase lg:text-2xl text-xl font-universalSerif tracking-wider">
                 View older news
               </a>
             </Link>

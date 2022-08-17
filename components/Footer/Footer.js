@@ -9,7 +9,7 @@ export default function Footer() {
       <div className=" container">
         <div className=" grid grid-cols-12">
           <div className="lg:col-span-4 col-span-6  py-8 lg:order-1 order-1">
-            <h4 className=" font-bold text-2xl">EXAMPLE</h4>
+            <h4 className="font-bold text-xl font-universalSerif tracking-wider">EXAMPLE</h4>
             <div className="bg-main h-1 w-2/4 mt-1"></div>
             <ul className="mt-2">
               {[
@@ -54,7 +54,7 @@ export default function Footer() {
             </div>
           </div>
           <div className=" lg:col-span-4 col-span-6 py-8 rtl lg:order-3 order-2 ">
-            <h4 className=" font-bold text-2xl">EXAMPLE</h4>
+            <h4 className=" font-bold text-xl font-universalSerif tracking-wider">EXAMPLE</h4>
             <div className="bg-main h-1 w-2/4 mt-1"></div>
             <ul className="mt-2">
               {[
