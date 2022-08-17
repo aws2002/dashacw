@@ -5,6 +5,7 @@ import { Menu, Transition } from "@headlessui/react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ActiveLink from "../Tools/ActiveLink";
 export default function Navbar() {
   const [navActive, setnavActive] = useState(false);
 
@@ -69,8 +70,11 @@ export default function Navbar() {
                   >
                     <div>
                       <Menu.Button className="inline-flex w-full items-center justify-center rounded-md transition-all px-4 py-2 text-sm hover:bg-opacity-90">
-                        <span className="uppercase text-5xl lg:mx-1 mx-4">
+                        <span className="lg:block hidden uppercase text-5xl lg:mx-1 mx-4">
                           <BiMenu />
+                        </span>
+                        <span className="lg:hidden block uppercase font-bold text-2xl lg:mx-1 mx-3">
+                          Menu
                         </span>
                       </Menu.Button>
                     </div>
@@ -83,16 +87,16 @@ export default function Navbar() {
                       leaveFrom="transform opacity-100 scale-100"
                       leaveTo="transform opacity-0 scale-95"
                     >
-                      <Menu.Items className=" -z-50 top-[75px] py-10 w-screen absolute px-1 right-0 mt-2 shadow-lg bg-black ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Items className=" -z-50 top-[65px] py-10 w-screen absolute px-1 right-0 mt-2 shadow-lg bg-black ring-1 ring-black ring-opacity-5 focus:outline-none">
                         {[
                           { id: 1, href: "/", titel: "Home" },
                           { id: 2, href: "/fqa", titel: "fqa" },
-                          { id: 3, href: "/fqa", titel: "LOREM" },
-                          { id: 4, href: "/fqa", titel: "IPSUM" },
+                          { id: 3, href: "", titel: "LOREM" },
+                          { id: 4, href: "", titel: "IPSUM" },
                         ].map(({ id, href, titel }) => (
                           <div className="pt-2" key={id}>
                             <Menu.Item>
-                              <Link href={href}>
+                              <ActiveLink href={href}>
                                 <div
                                   className={
                                     "group cursor-pointer text-center rounded-md px-2 py-2 text-sm font-semibold"
@@ -102,7 +106,7 @@ export default function Navbar() {
                                     {titel}
                                   </p>
                                 </div>
-                              </Link>
+                              </ActiveLink>
                             </Menu.Item>
                           </div>
                         ))}
@@ -112,13 +116,17 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-10 col-span-full flex items-center lg:px-4 lg:order-2 order-1">
+            <div className="lg:col-span-10 col-span-full flex items-center lg:px-4 lg:order-2 pr-3 order-1">
               <ul className=" uppercase font-bold text-lg text-gray-300">
-                <li className=" inline-block ml-2 cursor-pointer transition-all hover:text-white">ES</li>
+                <li className=" inline-block ml-1 cursor-pointer transition-all hover:text-white">
+                  ES
+                </li>
                 <li className=" inline-block ml-2 cursor-pointer border-x-4 transition-all hover:text-white border-main px-3">
                   FR
                 </li>
-                <li className=" inline-block ml-2 cursor-pointer transition-all hover:text-white">EN</li>
+                <li className=" inline-block  cursor-pointer transition-all hover:text-white">
+                  EN
+                </li>
               </ul>
             </div>
           </div>

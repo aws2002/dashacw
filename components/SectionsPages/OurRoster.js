@@ -7,24 +7,24 @@ export default function OurRoster() {
     <section className="our--roster mt-20 px-5 py-20">
       <div className="container">
         <div className=" text-center mb-10">
-          <h2 className=" font-extrabold lg:text-4xl text-3xl uppercase">
+          <h2 className=" font-extrabold lg:text-4xl text-2xl uppercase">
             <GiMuscleUp className=" inline text-5xl text-animation2" />{" "}
-            <span className=" border-b-4 border-main">OUR ROSTER</span>{" "}
+            <span className=" border-b-4 border-main pb-2 font-universalSerif tracking-wider	">OUR ROSTER</span>{" "}
             <GiMuscleUp className="text-5xl inline" />
           </h2>
         </div>
         <div className=" grid-cols-4 grid gap-10">
           {[
-            { id: 1 },
-            { id: 2 },
-            { id: 3 },
-            { id: 4 },
-            { id: 5 },
-            { id: 6 },
-            { id: 7 },
-            { id: 8 },
-          ].map(({ id }) => {
-            return <CardRoster id={id} key={id} />;
+            { id: 1 ,name:"JIMMY",img:"/assets/Image 1.png"},
+            { id: 2 ,name:"EXAMPLE",img:""},
+            { id: 3 ,name:"EXAMPLE",img:""},
+            { id: 4 ,name:"EXAMPLE",img:""},
+            { id: 5 ,name:"EXAMPLE",img:""},
+            { id: 6 ,name:"EXAMPLE",img:""},
+            { id: 7 ,name:"EXAMPLE",img:""},
+            { id: 8 ,name:"EXAMPLE",img:""},
+          ].map(({ id,name,img }) => {
+            return <CardRoster id={id} key={id} name={name} img={img}/>;
           })}
           <div className=" col-span-4 text-center">
             <Link href="/rosterViewAll">

@@ -44,11 +44,11 @@ export default function LatestNews() {
                     priority
                   />
                 </picture>
-                <p className=" mt-14 lg:px-24 text-gray-400 font-medium text-center">
+                <p className=" mt-14 lg:px-20 opacity-90 font-medium text-center">
                   {ds1}
                 </p>
                 {ds2 ? (
-                  <p className=" mt-14 lg:px-24 text-gray-400 font-medium text-center">
+                  <p className=" mt-14 lg:px-20 opacity-90 font-medium text-center">
                     {ds2}
                   </p>
                 ) : (

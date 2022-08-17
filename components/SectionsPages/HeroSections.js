@@ -63,27 +63,31 @@ export default function HeroSections() {
         <motion.div
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
-          className=" z-50 bg-white absolute cursor-pointer lg:top-1/2 top-[44%] lg:left-24 left-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
+          className=" z-50  absolute cursor-pointer lg:top-1/2 top-[41%] lg:left-4 left-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
           onClick={() => sliderRef.current.slickPrev()}
         >
-          <GrFormPrevious className=" text-3xl " />
+          <picture>
+            <img src="./assets/l-Arrow.png" className=" lg:w-10 w-7" alt="" />
+          </picture>
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
-          className=" z-50 bg-white absolute cursor-pointer lg:top-1/2 top-[44%] lg:right-24 right-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
+          className=" z-50  absolute cursor-pointer lg:top-1/2 top-[41%] lg:right-4 right-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
           onClick={() => sliderRef.current.slickPrev()}
         >
-          <GrFormNext className=" text-3xl " />
+          <picture>
+            <img src="./assets/R-Arrow.png" className=" lg:w-10 w-7" alt="" />
+          </picture>
         </motion.div>
       </div>
 
-      <div className=" grid grid-cols-1 ">
+      <div className=" grid grid-cols-1 pt-4">
         <Slider {...settings} ref={sliderRef}>
           {dataHeroSections.map(({ id, img, name, text, saveUp }) => (
             <div key={id}>
               <div className=" grid grid-cols-12">
-                <div className=" lg:col-span-3 lg:order-1 w-full  order-2 col-span-6 -mr-10 relative top-8">
+                <div className=" lg:col-span-3 lg:order-1 w-full  order-2 col-span-6 -mr-10 relative lg:top-8 top-14">
                   <Image
                     src={"/assets/L-image@2x.png"}
                     alt=""
@@ -94,8 +98,8 @@ export default function HeroSections() {
                     priority
                   />
                 </div>
-                <div className=" lg:col-span-6 mb-16 mt-14 col-span-full  text-center lg:order-2 order-1">
-                  <h1 className=" lg:text-7xl text-[35px] mb-5 text-white font-extrabold  letter-spacing">
+                <div className=" lg:col-span-6 mb-16 col-span-full pt-6  text-center lg:order-2 order-1">
+                  <h1 className="font-universalSerif lg:text-[65px] text-[30px] mb-4 text-white font-extrabold tracking-wider">
                     JUSTIN TURNBULL
                     <span className="block text-main text-shadow">VS</span>
                     BRIAN PILLMAN JR
@@ -105,7 +109,7 @@ export default function HeroSections() {
                     MORE INFO
                   </button>
                 </div>
-                <div className=" lg:col-span-3 col-span-6 lg:order-3 order-3 -ml-10 relative top-8">
+                <div className=" lg:col-span-3 col-span-6 lg:order-3 order-3 -ml-10 relative lg:top-8 top-14">
                   <Image
                     src={"/assets/R-Image@2x.png"}
                     alt=""

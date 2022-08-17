@@ -13,14 +13,14 @@ export default function CollapseFAQs({ data}) {
     <div className=" my-14">
       {data.map((item, index) => (
         <div
-          className=" grid grid-cols-1 cursor-pointer py-1"
+          className=" grid grid-cols-1 cursor-pointer py-2"
           key={item.id}
           onClick={() => toggle(index)}
         >
-          <div className="col-span-1  bg-main  px-4 py-5">
+          <div className="col-span-1  bg-main  px-8 py-5">
             <div className=" grid grid-cols-12">
               <div className="col-span-10">
-                <h1 className="font-bold text-opacity-80 text-lg">
+                <h1 className="font-bold text-2xl text-opacity-80">
                   {item.titel}
                 </h1>
               </div>

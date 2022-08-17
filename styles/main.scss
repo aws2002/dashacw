@@ -11,6 +11,17 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: 'font-44080';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://dl.fontget.com/u/n/universal-serif/woff_src/Universal Serif.woff?token=wyTje9SK927gqSKSLUyrCg&expires=1660834128') format('woff');
+}
+
+.font-universalSerif {
+  font-family: 'font-44080';
+}
+
 .bg1 {
 
   background-image: url("../public/assets/Bg.png");
@@ -25,9 +36,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .bg3 {
   background-image: url("../public/assets/Bg3.png");
 }
+
 .bg4 {
   background-image: url("../public/assets/Herobg.png");
 }
@@ -76,6 +89,7 @@ body {
 .card:hover::before,
 .card:hover::after {
   transform: translateY(0);
+
 }
 
 .card--content {
@@ -107,16 +121,19 @@ body {
 .btn-dots {
   background: transparent;
   border: 3px solid #fff;
-  width: 25px;
-  height: 25px;
-  
+  width: 20px;
+  height: 20px;
+
 }
-.slick-dots li{
+
+.slick-dots li {
   margin: 0 10px !important;
 }
+
 .slick-active .btn-dots {
   background: #411061 !important;
 }
+
 .rtl {
   direction: rtl;
 }

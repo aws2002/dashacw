@@ -13,8 +13,8 @@ export default function Fqa() {
           <div className=" grid grid-cols-4 gap-8 lg:px-20 mt-10 text-center">
             {[1, 2, 3, 4,5,6,7,8].map((id) => {
               return (
-                <div className=" bg-main lg:col-span-1 col-span-2 p-4" key={id}>
-                  <AiFillStar className=" text-9xl mx-auto" />
+                <div className=" bg-main lg:col-span-1 col-span-2 py-10" key={id}>
+                  <AiFillStar className=" text-8xl mx-auto" />
                   <h4 className=" font-bold text-gray-400 text-2xl">
                     PRESS & MEDIA
                   </h4>

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-export default function CardRoster({ id }) {
+export default function CardRoster({ id,name,img }) {
   const imageAnimate = {
     offscreen: { x: -100, opacity: 0 },
     onscreen: {
@@ -21,21 +21,22 @@ export default function CardRoster({ id }) {
       className="lg:col-span-1 col-span-2 card--roster"
       key={id}
     >
-      <motion.div className=" card w-full relative" variants={imageAnimate}>
+      <motion.div className="card w-full" variants={imageAnimate}>
         <div className=" relative top-2">
           <Image
-            src={"/assets/Image 1.png"}
+            src={img}
             alt=""
             width={315}
             height={450}
             loading="eager"
+            objectFit="cover"
             priority
           />
           
         </div>
         <div className=" absolute bottom-5  lg:left-8 text-center lg:right-8 left-3 right-3">
           <div className="name--roster lg:p-2 p-1">
-            <span className="font-medium lg:text-lg text-xs">JIMMY</span>
+            <span className="font-medium lg:text-lg text-xs uppercase">{name}</span>
             {/* <i></i> */}
           </div>
         </div>

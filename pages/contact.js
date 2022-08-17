@@ -1,5 +1,5 @@
 import Layout from "../components/Layouts/Layout";
-import { AiFillStar } from 'react-icons/ai';
+import { AiFillStar } from "react-icons/ai";
 export default function Contact() {
   return (
     <Layout bg="bg2">
@@ -7,7 +7,7 @@ export default function Contact() {
         <div className=" container">
           <div className=" title text-center">
             <h1 className=" font-extrabold text-6xl">Contact us</h1>
-            <p className=" text-gray-400 italic text-xl mt-4 lg:px-20 ">
+            <p className="italic text-xl mt-4 lg:px-20 opacity-80">
               Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Sed Do
               Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut
               Enim Ad Minim Lorem ipsum dolor sit amet consectetur adipisicing
@@ -17,20 +17,24 @@ export default function Contact() {
             </p>
           </div>
           <div className=" grid grid-cols-4 gap-10 lg:px-20 mt-10 text-center">
-          <div className=" col-span-full text-center">
-                <h2 className=" uppercase text-4xl font-bold">how can we help you?</h2>
+            <div className=" col-span-full text-center">
+              <h2 className=" uppercase text-4xl font-bold">
+                how can we help you?
+              </h2>
             </div>
-            <div className=" bg-main lg:col-span-1 col-span-2 p-4">
-                <AiFillStar className=" text-9xl mx-auto"/>
-                <h4 className=" font-bold text-gray-400 text-2xl">PRESS & MEDIA</h4>
+            <div className=" bg-main lg:col-span-1 col-span-2 py-8">
+              <AiFillStar className=" text-8xl mx-auto" />
+              <h4 className=" font-bold text-gray-400 text-2xl">
+                PRESS & MEDIA
+              </h4>
             </div>
           </div>
-          <form className=" grid grid-cols-2 gap-x-20 gap-y-2">
+          <form className=" grid grid-cols-2 gap-x-20 gap-y-2 mt-10">
             <div className=" lg:col-span-1 col-span-full">
               <div>
                 <label
                   htmlFor="email-address"
-                  className="block font-medium text-color_1 mt-5 mb-1 text-md"
+                  className="block mt-5 mb-1 text-xl font-bold"
                 >
                   FIRST NAME <span className=" text-red-600 text-2xl">*</span>
                 </label>
@@ -45,7 +49,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="email-address"
-                  className="block font-medium text-color_1 mt-5 mb-1 text-md"
+                  className="block mt-5 mb-1 text-xl font-bold"
                 >
                   LAST NAME <span className=" text-red-600 text-2xl">*</span>
                 </label>
@@ -60,7 +64,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="email-address"
-                  className="block font-medium text-color_1 mt-5 mb-1 text-md"
+                  className="block mt-5 mb-1 text-xl font-bold"
                 >
                   EMAIL ADDRESS{" "}
                   <span className=" text-red-600 text-2xl">*</span>
@@ -76,7 +80,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="email-address"
-                  className="block font-medium text-color_1 mt-5 mb-1 text-md"
+                  className="block mt-5 mb-1 text-xl font-bold"
                 >
                   PHONE NUMBER <span className=" text-red-600 text-2xl">*</span>
                 </label>
@@ -91,7 +95,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="email-address"
-                  className="block font-medium text-color_1 mt-5 mb-1 text-md"
+                  className="block mt-5 mb-1 text-xl font-bold"
                 >
                   COMMENTS <span className=" text-red-600 text-2xl">*</span>
                 </label>
@@ -103,10 +107,7 @@ export default function Contact() {
               </div>
             </div>
             <div className=" col-span-2 mt-10 text-center">
-              <button
-                
-                className=" mt-10 uppercase bg-main px-10 py-3 text-2xl font-bold transition-all hover:opacity-90"
-              >
+              <button className=" mt-10 uppercase bg-main px-10 py-3 text-2xl font-bold transition-all hover:opacity-90">
                 SUBMIT
               </button>
             </div>
