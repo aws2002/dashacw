@@ -10,7 +10,7 @@ export default function Footer() {
         <div className=" grid grid-cols-12">
           <div className="lg:col-span-4 col-span-6  py-8 lg:order-1 order-1">
             <h4 className="font-bold text-xl font-universalSerif tracking-wider">EXAMPLE</h4>
-            <div className="bg-main h-1 w-2/4 mt-1"></div>
+            <div className="bg-main h-1 lg:w-2/4 w-3/4 mt-1"></div>
             <ul className="mt-2">
               {[
                 { id: 1, name: "Home", href: "" },
@@ -18,7 +18,7 @@ export default function Footer() {
                 { id: 3, name: "Home", href: "" },
                 { id: 4, name: "Main", href: "" },
               ].map(({ id, name, href }) => (
-                <li className="inline-block mr-6 italic" key={id}>
+                <li className="inline-block mr-6 italic mb-3" key={id}>
                   <a href={href}>{name}</a>
                 </li>
               ))}
@@ -55,15 +55,15 @@ export default function Footer() {
           </div>
           <div className=" lg:col-span-4 col-span-6 py-8 rtl lg:order-3 order-2 ">
             <h4 className=" font-bold text-xl font-universalSerif tracking-wider">EXAMPLE</h4>
-            <div className="bg-main h-1 w-2/4 mt-1"></div>
+            <div className="bg-main h-1 lg:w-2/4 w-3/4 mt-1"></div>
             <ul className="mt-2">
               {[
-                { id: 1, name: "Home", href: "" },
-                { id: 2, name: "Main", href: "" },
-                { id: 3, name: "Home", href: "" },
-                { id: 4, name: "Main", href: "" },
+                { id: 1, name: "Main", href: "" },
+                { id: 2, name: "Home", href: "" },
+                { id: 3, name: "Main", href: "" },
+                { id: 4, name: "Home", href: "" },
               ].map(({ id, name, href }) => (
-                <li className="inline-block ml-6 italic" key={id}>
+                <li className="inline-block ml-6 italic mb-3" key={id}>
                   <a href={href}>{name}</a>
                 </li>
               ))}
@@ -71,8 +71,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className=" text-center uppercase mt-2 border-t-2 pt-2 border-[#9B9B9B]">
-        <p className=" text-sm font-light italic">
+      <div className=" text-center uppercase mt-2 border-t pt-2 border-[#9B9B9B]">
+        <p className=" lg:text-sm font-light italic opacity-60 text-xs">
           COPYRIGHT © 2022 KM2 ESPORTS CORP. ALL RIGHTS RESERVED
         </p>
       </div>
