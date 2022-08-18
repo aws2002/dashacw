@@ -2,8 +2,10 @@ import React, { useRef, useEffect } from "react";
 import Slider from "react-slick";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 export default function HeroSections() {
+  const [t, il18n] = useTranslation();
   const sliderRef = useRef(null);
   const settings = {
     dots: true,
@@ -101,7 +103,7 @@ export default function HeroSections() {
                   </h1>
                   <button className="transition-all hover:opacity-90 btn text-2xl border border-b-4 font-medium border-black font-universalSerif tracking-wider">
                     {" "}
-                    MORE INFO
+                    {t("home.btn1")}
                   </button>
                 </div>
               </div>

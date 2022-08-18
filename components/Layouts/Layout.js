@@ -1,11 +1,10 @@
-
 import Footer from "../Footer/Footer";
 import ScrollToTop from "../Tools/ScrollToTop";
 import { useState, useEffect } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Sponser from "../SectionsPages/Sponser";
-import dynamic from 'next/dynamic'
-const Navbar= dynamic(()=>import("../Navbar/Navbar"))
+import dynamic from "next/dynamic";
+const Navbar = dynamic(() => import("../Navbar/Navbar"));
 export default function Layout({ children, bg = "bg1" }) {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -23,7 +22,7 @@ export default function Layout({ children, bg = "bg1" }) {
             className=" fixed lg:top-[100px] top-[125px] left-0 right-0 bg-main z-50 h-[10px]"
             style={{ scaleX }}
           />
-
+          
           {children}
           <ScrollToTop />
           <Sponser />

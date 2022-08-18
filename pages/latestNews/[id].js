@@ -44,11 +44,11 @@ export default function LatestNews() {
                     priority
                   />
                 </picture>
-                <p className=" mt-14 lg:px-20 lg:text-lg  opacity-90 font-medium text-center">
+                <p className=" mt-14 lg:px-20 lg:text-[21px]  leading-10  opacity-90 text-center">
                   {ds1}
                 </p>
                 {ds2 ? (
-                  <p className=" mt-14 lg:px-20 opacity-90  lg:text-lg  font-medium text-center">
+                  <p className=" mt-14 lg:px-20 lg:text-[21px]  leading-10  opacity-90 text-center">
                     {ds2}
                   </p>
                 ) : (
@@ -56,8 +56,8 @@ export default function LatestNews() {
                 )}
               </div>
             ))}
-            <div className=" col-span-full my-10">
-              <div className=" text-center mb-10">
+            <div className=" col-span-full my-24">
+              <div className=" text-center mb-20">
                 <h2 className="text-4xl uppercase font-universalSerif">images</h2>
               </div>
               <div className=" grid grid-cols-12 gap-5">

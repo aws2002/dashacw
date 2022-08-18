@@ -6,7 +6,7 @@ export default function Sponser() {
       <div className=" grid grid-cols-4 border-b-4 border-main">
         {[1, 2, 3, 4].map((id) => (
           <div
-            className=" lg:col-span-1 col-span-2 border-x border-gray-500"
+            className=" lg:col-span-1 col-span-2 "
             key={id}
           >
             <div className="">

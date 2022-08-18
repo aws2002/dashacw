@@ -6,6 +6,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import ActiveLink from "../Tools/ActiveLink";
+
+import cookies from "js-cookie";
+import { useTranslation } from "react-i18next";
 export default function Navbar() {
   const [navActive, setnavActive] = useState(false);
 
@@ -19,7 +22,28 @@ export default function Navbar() {
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", changeNav);
   }
-
+  const languages = [
+    
+    {
+      code: "es",
+      country_code: "es",
+    },
+    {
+      code: "fr",
+      country_code: "fr",
+    },
+    {
+      code: "en",
+      country_code: "gb",
+    },
+  ];
+  const [t, il18n] = useTranslation();
+  const currentLanguageCode = cookies.get("i18next") || "en";
+  const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+  React.useEffect(() => {
+    console.log("Setting page stuff");
+    document.body.dir = currentLanguage.dir || "ltr";
+  }, [currentLanguage, t]);
   return (
     <header
       className={
@@ -73,7 +97,7 @@ export default function Navbar() {
                         <span className="lg:block hidden uppercase text-5xl lg:mx-1 mx-4">
                           <BiMenu />
                         </span>
-                        <span className="lg:hidden block uppercase font-bold text-xl tracking-wider font-universalSerif lg:mx-1 mx-3">
+                        <span className="lg:hidden block uppercase font-bold text-xl tracking-wider font-universalSerif lg:mx-1 mx-2">
                           Menu
                         </span>
                       </Menu.Button>
@@ -118,15 +142,18 @@ export default function Navbar() {
             </div>
             <div className="lg:col-span-10 col-span-full flex items-center lg:px-4 lg:order-2 pr-2 order-1">
               <ul className=" uppercase font-bold text-md text-gray-300 font-universalSerif tracking-wider">
-                <li className=" inline-block ml-1 cursor-pointer transition-all hover:text-white">
-                  ES
+                {languages.map(({code})=>(
+                  <li
+                  key={code}
+                  onClick={() => {
+                    il18n.changeLanguage(code);
+                  }}
+                  className=" inline-block ml-3 cursor-pointer transition-all hover:text-white"
+                >
+                  {code}
+                  
                 </li>
-                <li className=" inline-block ml-2 cursor-pointer border-x-4 transition-all hover:text-white border-main px-2">
-                  FR
-                </li>
-                <li className=" inline-block  cursor-pointer transition-all hover:text-white">
-                  EN
-                </li>
+                ))}
               </ul>
             </div>
           </div>

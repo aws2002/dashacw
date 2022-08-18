@@ -6,7 +6,8 @@
     "home": {
       "welcome": "Limitless learning at your fingertips",
       "description": "Online learning and teaching marketplace with 5K+ courses & 10M students. Taught by experts to help you acquire new skills.",
-      "learn": "Learn more"
+      "learn": "Learn more",
+      "btn1":"MORE INFO"
     },
     "about": {
       "title": "A strong team",
