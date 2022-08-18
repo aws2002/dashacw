@@ -5,7 +5,7 @@ export default function LatestNews() {
   return (
     <Layout>
       <section className="latest--news px-4 my-20">
-        <div className=" container lg:px-20">
+        <div className=" container lg:px-20 px-4">
           <div>
             <h1 className="font-universalSerif lg:text-5xl text-3xl">
               EXAMPLE TITLE

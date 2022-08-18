@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <Layout bg="bg2">
       <section className="contact px-4 my-20">
-        <div className=" container lg:px-20">
+        <div className=" container lg:px-20 px-4">
           <div className=" title text-center">
             <h1 className="lg:text-6xl text-3xl font-universalSerif">Contact us</h1>
             <p className="italic lg:text-2xl mt-4 font-medium opacity-80 mb-20">

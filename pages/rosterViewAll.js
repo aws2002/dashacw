@@ -6,7 +6,7 @@ export default function RosterViewAll() {
   return (
     <Layout>
       <section className="roster--viewAll py-20">
-        <div className=" container lg:px-20">
+        <div className=" container lg:px-20 px-4">
         <div className=" text-center mb-10">
           <h2 className=" font-extrabold lg:text-4xl text-2xl uppercase">
             <GiMuscleUp className=" inline text-5xl text-animation2" />{" "}

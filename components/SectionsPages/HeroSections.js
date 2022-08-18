@@ -102,7 +102,7 @@ export default function HeroSections() {
                     BRIAN PILLMAN JR
                   </h1>
                   <button className="transition-all hover:opacity-90 btn text-2xl border border-b-4 font-medium border-black font-universalSerif tracking-wider">
-                    {" "}
+                    
                     {t("home.btn1")}
                   </button>
                 </div>

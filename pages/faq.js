@@ -6,7 +6,7 @@ export default function Faq() {
   return (
     <Layout bg="bg2">
       <section className="fqa px-4 my-20">
-        <div className=" container lg:px-24">
+        <div className=" container lg:px-24 px-4">
           <div className=" title text-center">
             <h1 className=" font-extrabold text-6xl">FQA</h1>
           </div>

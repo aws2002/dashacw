@@ -6,7 +6,7 @@ export default function NewsArchive() {
   return (
     <Layout>
       <section className="news--archive px-4 my-20">
-        <div className=" container lg:px-20">
+        <div className=" container lg:px-20 px-4">
         <div className=" text-center mb-28">
         <h2 className="lg:text-5xl text-2xl uppercase">
             <picture>
