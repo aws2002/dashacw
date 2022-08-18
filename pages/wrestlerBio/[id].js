@@ -11,7 +11,7 @@ export default function WrestlerBio() {
       <section className="wrestler--bio mb-20 ">
         <HeroSectionWrestlerBio />
         <div className=" container mt-10 px-4">
-          <div>
+          <div className=" my-10">
             <h2 className=" text-3xl  my-3 font-universalSerif">LINKS</h2>
             <div className=" bg-main w-1/4 h-2"></div>
             <ul className=" mt-10">
@@ -35,30 +35,29 @@ export default function WrestlerBio() {
           <div className=" my-10">
             <h2 className=" text-3xl my-3  font-universalSerif">BIO</h2>
             <div className=" bg-main w-1/4 h-2"></div>
-            <p className=" lg:pr-60 mt-4 italic text-gray-400 font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              assumenda, similique eveniet aliquam eligendi sequi ad quo esse
-              dolor tempora quos. Quod iusto exercitationem id dolorum dolor
-              voluptatibus voluptates tenetur? Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Eaque similique quibusdam quod optio
-              numquam voluptatibus non unde repudiandae nobis aliquam dolor
-              doloribus ab illo, aperiam quam. Beatae dolore impedit natus.
+            <p className=" lg:pr-60 mt-4 italic text-gray-400 text-2xl font-medium">
+              Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Sed Do
+              Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut
+              Enim Ad Minim Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
+              Elit Sed Do Eiusmod Tempor
             </p>
           </div>
-          <div>
+          <div className=" my-10">
             <h2 className=" text-3xl my-3 font-universalSerif">TITLES HELD</h2>
             <div className=" bg-main w-1/4 h-2"></div>
-            <ul className=" mt-10">
+            <ul className=" mt-10 lg:mr-40">
               {[
                 { id: 1, name: "TITLES HELD" },
-                { id: 2, name: "EXAMPLE" },
-                { id: 3, name: "EXAMPLE" },
+                { id: 2, name: "ROH TV TITLE" },
+                { id: 3, name: "AAA TAG-TEAM" },
                 { id: 4, name: "ACW WORLD HEAVYWEIGHT" },
+                { id: 5, name: "EXAMPLE" },
+                { id: 6, name: "EXAMPLE" },
               ].map(({ id, name }) => (
-                <li className=" inline-block mb-10 mr-4" key={id}>
+                <li className=" inline-block italic mb-10 mr-4" key={id}>
                   <a
                     href=""
-                    className=" mt-10 uppercase bg-main lg:px-10 px-2 py-3 text-xl font-bold transition-all hover:opacity-90"
+                    className=" mt-10 uppercase bg-main lg:px-10 px-2 py-3 text-xl transition-all hover:opacity-90"
                   >
                     {name}
                   </a>
@@ -66,7 +65,7 @@ export default function WrestlerBio() {
               ))}
             </ul>
           </div>
-          <div className=" mt-20">
+          <div className=" my-10">
             <h2 className=" text-3xl my-3 font-universalSerif">MEDIA</h2>
             <div className=" bg-main w-1/4 h-2"></div>
             <div className=" grid grid-cols-2 mt-16 gap-16">
