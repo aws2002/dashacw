@@ -23,7 +23,10 @@ export default function Navbar() {
     window.addEventListener("scroll", changeNav);
   }
   const languages = [
-    
+    {
+      code: "en",
+      country_code: "gb",
+    },
     {
       code: "es",
       country_code: "es",
@@ -31,10 +34,6 @@ export default function Navbar() {
     {
       code: "fr",
       country_code: "fr",
-    },
-    {
-      code: "en",
-      country_code: "gb",
     },
   ];
   const [t, il18n] = useTranslation();
@@ -97,7 +96,7 @@ export default function Navbar() {
                         <span className="lg:block hidden uppercase text-5xl lg:mx-1 mx-4">
                           <BiMenu />
                         </span>
-                        <span className="lg:hidden block uppercase font-bold text-xl tracking-wider font-universalSerif lg:mx-1 mx-2">
+                        <span className="lg:hidden block uppercase font-bold text-xl tracking-wider font-universalSerif lg:mx-1 mx-3">
                           Menu
                         </span>
                       </Menu.Button>
@@ -111,7 +110,7 @@ export default function Navbar() {
                       leaveFrom="transform opacity-100 scale-100"
                       leaveTo="transform opacity-0 scale-95"
                     >
-                      <Menu.Items className=" z-50 top-[65px] py-10 w-screen absolute px-1 right-0 mt-2 shadow-lg bg-black ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Items className=" z-50 top-[63px] py-10 w-screen absolute px-1 right-0 mt-2 shadow-lg bg-black ring-1 ring-black ring-opacity-5 focus:outline-none">
                         {[
                           { id: 1, href: "/", titel: "Home" },
                           { id: 2, href: "/faq", titel: "faq" },
@@ -142,18 +141,36 @@ export default function Navbar() {
             </div>
             <div className="lg:col-span-10 col-span-full flex items-center lg:px-4 lg:order-2 pr-2 order-1">
               <ul className=" uppercase font-bold text-md text-gray-300 font-universalSerif tracking-wider">
-                {languages.map(({code})=>(
-                  <li
-                  key={code}
+                <li
                   onClick={() => {
-                    il18n.changeLanguage(code);
+                    il18n.changeLanguage("es");
                   }}
-                  className=" inline-block ml-3 cursor-pointer transition-all hover:text-white"
+                  className={`${
+                    il18n.language === "es" ? " text-white" : "text-gray-300"
+                  } inline-block ml-1 cursor-pointer transition-all hover:text-white`}
                 >
-                  {code}
-                  
+                  ES
                 </li>
-                ))}
+                <li
+                  onClick={() => {
+                    il18n.changeLanguage("fr");
+                  }}
+                  className={`${
+                    il18n.language === "fr" ? " text-white" : "text-gray-300"
+                  } inline-block ml-2 cursor-pointer border-x-4 transition-all hover:text-white border-main px-2`}
+                >
+                  FR
+                </li>
+                <li
+                  onClick={() => {
+                    il18n.changeLanguage("en");
+                  }}
+                  className={`${
+                    il18n.language === "en" ? " text-white" : "text-gray-300"
+                  } inline-block  cursor-pointer transition-all hover:text-white`}
+                >
+                  EN
+                </li>
               </ul>
             </div>
           </div>
