@@ -20,7 +20,7 @@ export default function LatestNews() {
           })}
           <div className=" col-span-2 text-center">
             <Link href="/newsArchive">
-              <a className=" btn uppercase lg:text-2xl text-xl font-universalSerif tracking-wider">
+              <a className="transition-all hover:opacity-90 btn uppercase lg:text-2xl text-xl font-universalSerif tracking-wider">
                 View older news
               </a>
             </Link>

@@ -21,7 +21,7 @@ export default function CardNews({ id }) {
           since th 1500s, when an unknown printer took
         </p>
         <Link href="/latestNews/1">
-          <a className="btn font-universalSerif tracking-wider">READ MORE</a>
+          <a className="btn font-universalSerif tracking-wider transition-all hover:opacity-90">READ MORE</a>
         </Link>
       </div>
     </div>

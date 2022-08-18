@@ -58,7 +58,7 @@ export default function HeroSections() {
     },
   ];
   return (
-    <section className="heroSections relative bg-bottom  bg3  bg-cover bg-no-repeat overflow-hidden">
+    <section className="heroSections relative bg-bottom  bg3   bg-cover bg-no-repeat overflow-hidden">
       <div className=" container">
         <motion.div
           whileHover={{ scale: 1.2 }}
@@ -104,7 +104,7 @@ export default function HeroSections() {
                     <span className="block text-main text-shadow">VS</span>
                     BRIAN PILLMAN JR
                   </h1>
-                  <button className="btn text-2xl border border-b-4 font-medium border-black font-universalSerif tracking-wider">
+                  <button className="transition-all hover:opacity-90 btn text-2xl border border-b-4 font-medium border-black font-universalSerif tracking-wider">
                     {" "}
                     MORE INFO
                   </button>

@@ -272,3 +272,11 @@ body {
     opacity: 0;
   }
 }
+
+@media screen and (max-width:767px) {
+
+  .card::before,
+  .card::after {
+    height: calc(60% + 19px);
+  }
+}

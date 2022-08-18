@@ -29,7 +29,7 @@ export default function OurRoster() {
           })}
           <div className=" col-span-4 text-center">
             <Link href="/rosterViewAll">
-              <a className="btn uppercase lg:text-2xl text-xl font-universalSerif tracking-wider">VIEW ALL</a>
+              <a className="transition-all hover:opacity-90 btn uppercase lg:text-2xl text-xl font-universalSerif tracking-wider">VIEW ALL</a>
             </Link>
           </div>
         </div>

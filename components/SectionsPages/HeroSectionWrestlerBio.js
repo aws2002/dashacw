@@ -19,8 +19,8 @@ export default function HeroSectionWrestlerBio() {
     },
   };
   return (
-    <section className="bg4 pt-8 bg-bottom overflow-hidden bg-cover bg-no-repeat ">
-      <div className=" container px-10">
+    <section className="bg4 pt-8 bg-bottom px-4 tracking-widest font-universalSerif overflow-hidden bg-cover bg-no-repeat ">
+      <div className=" container">
         <div className=" grid grid-cols-2">
           <motion.div
             animate={{ opacity: 1, scale: 1 }}
@@ -79,7 +79,7 @@ export default function HeroSectionWrestlerBio() {
                   variants={list}
                   className=" font-extrabold lg:text-8xl text-7xl"
                 >
-                  5<span>-</span>1<span>-</span>0
+                  5<span className=" text-main px-4">-</span>1<span className=" text-main px-4">-</span>0
                 </motion.p>
               </div>
             </div>

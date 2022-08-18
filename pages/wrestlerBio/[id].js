@@ -12,7 +12,7 @@ export default function WrestlerBio() {
         <HeroSectionWrestlerBio />
         <div className=" container mt-10 px-4">
           <div>
-            <h2 className=" text-3xl font-bold my-3">LINKS</h2>
+            <h2 className=" text-3xl  my-3 font-universalSerif">LINKS</h2>
             <div className=" bg-main w-1/4 h-2"></div>
             <ul className=" mt-10">
               {[
@@ -24,7 +24,7 @@ export default function WrestlerBio() {
                 <li className=" inline-block mb-10 mr-4" key={id}>
                   <a
                     href=""
-                    className=" mt-10 uppercase bg-main lg:px-10 px-2 py-3 text-xl font-bold transition-all hover:opacity-90"
+                    className="border border-b-4 font-universalSerif border-black mt-10 uppercase bg-main lg:px-10 px-2 py-3 text-xl transition-all hover:opacity-90"
                   >
                     {name}
                   </a>
@@ -33,7 +33,7 @@ export default function WrestlerBio() {
             </ul>
           </div>
           <div className=" my-10">
-            <h2 className=" text-3xl font-bold my-3">BIO</h2>
+            <h2 className=" text-3xl my-3  font-universalSerif">BIO</h2>
             <div className=" bg-main w-1/4 h-2"></div>
             <p className=" lg:pr-60 mt-4 italic text-gray-400 font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
@@ -46,7 +46,7 @@ export default function WrestlerBio() {
             </p>
           </div>
           <div>
-            <h2 className=" text-3xl font-bold my-3">TITLES HELD</h2>
+            <h2 className=" text-3xl my-3 font-universalSerif">TITLES HELD</h2>
             <div className=" bg-main w-1/4 h-2"></div>
             <ul className=" mt-10">
               {[
@@ -67,7 +67,7 @@ export default function WrestlerBio() {
             </ul>
           </div>
           <div className=" mt-20">
-            <h2 className=" text-3xl font-bold my-3">MEDIA</h2>
+            <h2 className=" text-3xl my-3 font-universalSerif">MEDIA</h2>
             <div className=" bg-main w-1/4 h-2"></div>
             <div className=" grid grid-cols-2 mt-16 gap-16">
               <div className=" lg:col-span-1 col-span-full">

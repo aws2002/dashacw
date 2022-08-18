@@ -45,7 +45,7 @@ export default function CardRoster({ id,name,img }) {
         </div>
         <div className="card--content absolute z-50 flex top-2/4 lg:left-8 lg:right-8 left-3 right-3">
           <Link href="/wrestlerBio/1">
-            <a className=" bg-main py-2 w-full text-center font-medium font-universalSerif tracking-wider  lg:text-xl text-xs">
+            <a className="transition-all hover:opacity-90 bg-main py-2 w-full text-center font-medium font-universalSerif tracking-wider  lg:text-xl text-xs">
               VIEW PROFILE
             </a>
           </Link>

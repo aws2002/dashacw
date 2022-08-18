@@ -30,7 +30,7 @@ export default function Navbar() {
     >
       <div className=" grid grid-cols-12">
         <div className="col-span-4 flex items-center">
-          <div className=" grid grid-cols-4 ml-4">
+          <div className=" grid grid-cols-4 ml-4 gap-1">
             {data.footerLinks.social.map(({ id, icon }) => (
               <motion.div
                 whileHover={{ scale: 1.2 }}
@@ -73,7 +73,7 @@ export default function Navbar() {
                         <span className="lg:block hidden uppercase text-5xl lg:mx-1 mx-4">
                           <BiMenu />
                         </span>
-                        <span className="lg:hidden block uppercase font-bold text-2xl lg:mx-1 mx-3">
+                        <span className="lg:hidden block uppercase font-bold text-xl tracking-wider font-universalSerif lg:mx-1 mx-3">
                           Menu
                         </span>
                       </Menu.Button>
@@ -116,8 +116,8 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-10 col-span-full flex items-center lg:px-4 lg:order-2 pr-3 order-1">
-              <ul className=" uppercase font-bold text-lg text-gray-300 font-universalSerif tracking-wider">
+            <div className="lg:col-span-10 col-span-full flex items-center lg:px-4 lg:order-2 pr-2 order-1">
+              <ul className=" uppercase font-bold text-md text-gray-300 font-universalSerif tracking-wider">
                 <li className=" inline-block ml-1 cursor-pointer transition-all hover:text-white">
                   ES
                 </li>
