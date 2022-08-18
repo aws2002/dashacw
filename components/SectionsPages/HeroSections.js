@@ -19,7 +19,7 @@ export default function HeroSections() {
       <motion.div
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
-        className="lg:-mt-20 -mt-[360px] bg-slate-400 rounded-full w-4 h-4 btn-dots"
+        className="lg:-mt-[-200px]  bg-slate-400 w-6 h-6 lg:h-7 lg:w-7 rounded-full btn-dots"
       ></motion.div>
     ),
     responsive: [
@@ -56,14 +56,20 @@ export default function HeroSections() {
     {
       id: "2",
     },
+    {
+      id: "3",
+    },
+    {
+      id: "4",
+    },
   ];
   return (
-    <section className="heroSections relative bg-bottom  bg3   bg-cover bg-no-repeat overflow-hidden">
+    <section className="heroSections relative overflow-hidden">
       <div className=" container">
         <motion.div
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
-          className=" z-50  absolute cursor-pointer lg:top-1/2 top-[41%] lg:left-4 left-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
+          className=" z-50  absolute cursor-pointer lg:top-[45%] top-[41%] lg:left-4 left-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
           onClick={() => sliderRef.current.slickPrev()}
         >
           <picture>
@@ -73,7 +79,7 @@ export default function HeroSections() {
         <motion.div
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
-          className=" z-50  absolute cursor-pointer lg:top-1/2 top-[41%] lg:right-4 right-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
+          className=" z-50  absolute cursor-pointer lg:top-[45%] top-[41%] lg:right-4 right-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
           onClick={() => sliderRef.current.slickNext()}
         >
           <picture>
@@ -82,24 +88,13 @@ export default function HeroSections() {
         </motion.div>
       </div>
 
-      <div className=" grid grid-cols-1 pt-4">
+      <div className=" grid grid-cols-1 ">
         <Slider {...settings} ref={sliderRef}>
           {dataHeroSections.map(({ id, img, name, text, saveUp }) => (
-            <div key={id}>
-              <div className=" grid grid-cols-12">
-                <div className=" lg:col-span-3 lg:order-1 w-full  order-2 col-span-6 -mr-10 relative lg:top-8 top-14">
-                  <Image
-                    src={"/assets/L-image@2x.png"}
-                    alt=""
-                    width={440}
-                    height={710}
-                    objectFit="cover"
-                    loading="eager"
-                    priority
-                  />
-                </div>
-                <div className=" lg:col-span-6 mb-16 col-span-full pt-6  text-center lg:order-2 order-1">
-                  <h1 className="font-universalSerif lg:text-[65px] text-[30px] mb-4 text-white font-extrabold tracking-wider">
+            <div key={id} className=" h-screen bg3 bg-cover bg-no-repeat">
+              <div className=" grid grid-cols-12 ">
+                <div className=" col-span-12 mb-16 pt-10 text-center lg:order-2 order-1">
+                  <h1 className="font-universalSerif lg:text-[65px] text-[28px] mb-4 text-white ">
                     JUSTIN TURNBULL
                     <span className="block text-main text-shadow">VS</span>
                     BRIAN PILLMAN JR
@@ -108,17 +103,6 @@ export default function HeroSections() {
                     {" "}
                     MORE INFO
                   </button>
-                </div>
-                <div className=" lg:col-span-3 col-span-6 lg:order-3 order-3 -ml-10 relative lg:top-8 top-14">
-                  <Image
-                    src={"/assets/R-Image@2x.png"}
-                    alt=""
-                    width={440}
-                    height={640}
-                    objectFit="cover"
-                    loading="eager"
-                    priority
-                  />
                 </div>
               </div>
             </div>

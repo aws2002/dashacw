@@ -24,8 +24,8 @@ export default function Navbar() {
     <header
       className={
         navActive
-          ? " bg-black   w-full z-[1000] sticky -top-1 lg:py-0 py-3"
-          : "bg-black  border-main lg:py-0 py-2"
+          ? "bg-black  w-full z-[1000] sticky -top-1 lg:py-0 py-3"
+          : "bg-black   border-main lg:py-0 py-2"
       }
     >
       <div className=" grid grid-cols-12">
@@ -35,7 +35,7 @@ export default function Navbar() {
               <motion.div
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.8 }}
-                className="lg:col-span-1 lg:mb-0 mb-2 col-span-2  inline-flex mr-3 bg-main w-12 h-12 justify-center items-center rounded-full"
+                className="lg:col-span-1 lg:mb-0 mb-2 col-span-2  inline-flex mr-3 bg-main lg:w-12 lg:h-12 w-10 h-10 justify-center items-center rounded-full"
                 key={id}
               >
                 <Link href="">
@@ -90,7 +90,7 @@ export default function Navbar() {
                       <Menu.Items className=" z-50 top-[65px] py-10 w-screen absolute px-1 right-0 mt-2 shadow-lg bg-black ring-1 ring-black ring-opacity-5 focus:outline-none">
                         {[
                           { id: 1, href: "/", titel: "Home" },
-                          { id: 2, href: "/fqa", titel: "faq" },
+                          { id: 2, href: "/faq", titel: "faq" },
                           { id: 3, href: "", titel: "LOREM" },
                           { id: 4, href: "", titel: "IPSUM" },
                         ].map(({ id, href, titel }) => (
@@ -121,7 +121,7 @@ export default function Navbar() {
                 <li className=" inline-block ml-1 cursor-pointer transition-all hover:text-white">
                   ES
                 </li>
-                <li className=" inline-block ml-2 cursor-pointer border-x-4 transition-all hover:text-white border-main px-3">
+                <li className=" inline-block ml-2 cursor-pointer border-x-4 transition-all hover:text-white border-main px-2">
                   FR
                 </li>
                 <li className=" inline-block  cursor-pointer transition-all hover:text-white">

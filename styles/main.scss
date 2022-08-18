@@ -23,7 +23,6 @@ body {
 }
 
 .bg1 {
-
   background-image: url("../public/assets/Bg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -38,7 +37,7 @@ body {
 }
 
 .bg3 {
-  background-image: url("../public/assets/Bg3.png");
+  background-image: url("../public/assets/Carosel\ image.png");
 }
 
 .bg4 {
@@ -70,7 +69,7 @@ body {
   background-color: rgba(0, 0, 0, 0.571);
   position: absolute;
   width: 100%;
-  height: calc(60% + 35.1px);
+  height: calc(60% + 29.3px);
   transition: transform .5s .25s ease-in;
   z-index: 1;
 }
@@ -119,11 +118,14 @@ body {
   letter-spacing: 2px;
 }
 
+p {
+  font-family: Poppins, sans-serif;
+}
+
 .btn-dots {
   background: transparent;
   border: 3px solid #fff;
-  width: 20px;
-  height: 20px;
+
 
 }
 
@@ -141,8 +143,9 @@ body {
 
 .btn {
   background-color: #411061;
-  padding: 10px 30px;
+  padding: 15px 30px;
   text-align: center;
+  
 }
 
 .card--roster .btn {
@@ -279,4 +282,15 @@ body {
   .card::after {
     height: calc(60% + 19px);
   }
+
+  .bg3 {
+    background-image: url("../public/assets/Carosel\ Image@2x.png");
+  }
+}
+.bgWrap {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
 }

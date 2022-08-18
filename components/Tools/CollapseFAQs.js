@@ -17,10 +17,10 @@ export default function CollapseFAQs({ data}) {
           key={item.id}
           onClick={() => toggle(index)}
         >
-          <div className="col-span-1  bg-main  px-8 py-5">
+          <div className="col-span-1  bg-main font-universalSerif  px-8 py-5">
             <div className=" grid grid-cols-12">
               <div className="col-span-10">
-                <h1 className="font-bold text-2xl text-opacity-80">
+                <h1 className=" text-2xl text-opacity-80">
                   {item.titel}
                 </h1>
               </div>

@@ -18,7 +18,7 @@ export default function Footer() {
                 { id: 3, name: "Home", href: "" },
                 { id: 4, name: "Main", href: "" },
               ].map(({ id, name, href }) => (
-                <li className="inline-block mr-6 italic mb-3" key={id}>
+                <li className="inline-block mr-6 mb-3" key={id}>
                   <a href={href}>{name}</a>
                 </li>
               ))}
@@ -63,7 +63,7 @@ export default function Footer() {
                 { id: 3, name: "Main", href: "" },
                 { id: 4, name: "Home", href: "" },
               ].map(({ id, name, href }) => (
-                <li className="inline-block ml-6 italic mb-3" key={id}>
+                <li className="inline-block ml-6 mb-3" key={id}>
                   <a href={href}>{name}</a>
                 </li>
               ))}

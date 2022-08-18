@@ -6,12 +6,19 @@ export default function NewsArchive() {
   return (
     <Layout>
       <section className="news--archive px-4 my-20">
-        <div className=" container">
-        <div className=" text-center mb-20">
-          <h2 className=" font-extrabold lg:text-4xl text-3xl uppercase">
-            <GiMuscleUp className=" inline text-5xl text-animation2" />{" "}
-            <span className=" border-b-4 border-main pb-2 uppercase font-universalSerif tracking-wider">News archive</span>{" "}
-            <GiMuscleUp className="text-5xl inline" />
+        <div className=" container lg:px-20">
+        <div className=" text-center mb-28">
+        <h2 className="lg:text-5xl text-2xl uppercase">
+            <picture>
+              <img src="./assets/Accademie.png" className=" lg:w-14 w-10 inline mr-3" alt="" />
+            </picture>
+            {/* <GiMuscleUp className=" inline text-5xl" />{" "} */}
+            <span className="border-b-4 border-main pb-2 font-universalSerif tracking-wider">
+            NEWS ARCHIVE
+            </span>{" "}
+            <picture>
+              <img src="./assets/Accademie.png" className=" lg:w-14 w-10 inline mr-3" alt="" />
+            </picture>
           </h2>
         </div>
           <div className=" grid grid-cols-2 gap-x-32 gap-y-10">
