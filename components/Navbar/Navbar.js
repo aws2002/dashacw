@@ -6,12 +6,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import ActiveLink from "../Tools/ActiveLink";
-import { useRouter } from "next/router";
-import setLanguage from 'next-translate/setLanguage'
+
 import cookies from "js-cookie";
-import useTranslation from 'next-translate/useTranslation'
+import { useTranslation } from "react-i18next";
 export default function Navbar() {
-  const router = useRouter();
   const [navActive, setnavActive] = useState(false);
 
   const changeNav = () => {
@@ -38,12 +36,13 @@ export default function Navbar() {
       country_code: "fr",
     },
   ];
+  const [t, il18n] = useTranslation();
   const currentLanguageCode = cookies.get("i18next") || "en";
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
   React.useEffect(() => {
     console.log("Setting page stuff");
     document.body.dir = currentLanguage.dir || "ltr";
-  }, [currentLanguage]);
+  }, [currentLanguage, t]);
   return (
     <header
       className={
@@ -141,18 +140,37 @@ export default function Navbar() {
               </div>
             </div>
             <div className="lg:col-span-10 col-span-full flex items-center lg:px-4 lg:order-2 pr-2 order-1">
-              <ul className=" uppercase font-bold text-md text-gray-300 font-universalSerif tracking-wider lg:pr-0 pr-2">
-                {router.locales.map((locale) => (
-                  <li
-                  onClick={async () => await setLanguage(locale)}
-                    key={locale}
-                    className={`inline-block ml-2 cursor-pointer transition-all hover:text-white lg:px-2`}
-                  >
-                    <Link href={router.asPath} locale={locale}>
-                      <a>{locale}</a>
-                    </Link>
-                  </li>
-                ))}
+              <ul className=" uppercase font-bold text-md text-gray-300 font-universalSerif tracking-wider">
+                <li
+                  onClick={() => {
+                    il18n.changeLanguage("es");
+                  }}
+                  className={`${
+                    il18n.language === "es" ? " text-white" : "text-gray-300"
+                  } inline-block ml-1 cursor-pointer transition-all hover:text-white`}
+                >
+                  ES
+                </li>
+                <li
+                  onClick={() => {
+                    il18n.changeLanguage("fr");
+                  }}
+                  className={`${
+                    il18n.language === "fr" ? " text-white" : "text-gray-300"
+                  } inline-block ml-2 cursor-pointer border-x-4 transition-all hover:text-white border-main px-2`}
+                >
+                  FR
+                </li>
+                <li
+                  onClick={() => {
+                    il18n.changeLanguage("en");
+                  }}
+                  className={`${
+                    il18n.language === "en" ? " text-white" : "text-gray-300"
+                  } inline-block  cursor-pointer transition-all hover:text-white`}
+                >
+                  EN
+                </li>
               </ul>
             </div>
           </div>
