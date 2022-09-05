@@ -6,12 +6,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import ActiveLink from "../Tools/ActiveLink";
-
+import { useRouter } from "next/router";
 import cookies from "js-cookie";
 import { useTranslation } from "react-i18next";
 export default function Navbar() {
   const [navActive, setnavActive] = useState(false);
-
+  const router = useRouter();
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setnavActive(true);
@@ -42,7 +42,7 @@ export default function Navbar() {
   React.useEffect(() => {
     console.log("Setting page stuff");
     document.body.dir = currentLanguage.dir || "ltr";
-  }, [currentLanguage, t]);
+  }, []);
   return (
     <header
       className={

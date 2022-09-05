@@ -96,8 +96,8 @@ export default function HeroSections() {
                   alt="Mountains"
                   src="/assets/Carosel image.png"
                   layout="responsive"
-                  width={200}
-                  height={100}
+                  width={50}
+                  height={25}
                   objectFit="cover"
                   quality={100}
                 />
@@ -107,8 +107,8 @@ export default function HeroSections() {
                   alt="Mountains"
                   src="/assets/Carosel Image@2x.png"
                   layout="responsive"
-                  width={200}
-                  height={380}
+                  width={50}
+                  height={25}
                   objectFit="cover"
                   quality={100}
                 />

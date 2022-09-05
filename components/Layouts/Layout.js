@@ -32,7 +32,7 @@ export default function Layout({ children, bg = "/assets/Bg.png" }) {
         </>
       );
       setComponents(components);
-    }, 0);
+    }, 2);
   });
   return (
     <div className={`content text-white`}>
