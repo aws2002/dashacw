@@ -7,8 +7,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import ActiveLink from "../Tools/ActiveLink";
 import { useRouter } from "next/router";
+import setLanguage from 'next-translate/setLanguage'
 import cookies from "js-cookie";
-import { useTranslation } from "react-i18next";
+import useTranslation from 'next-translate/useTranslation'
 export default function Navbar() {
   const router = useRouter();
   const [navActive, setnavActive] = useState(false);
@@ -37,13 +38,12 @@ export default function Navbar() {
       country_code: "fr",
     },
   ];
-  const [t, il18n] = useTranslation();
   const currentLanguageCode = cookies.get("i18next") || "en";
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
   React.useEffect(() => {
     console.log("Setting page stuff");
     document.body.dir = currentLanguage.dir || "ltr";
-  }, []);
+  }, [currentLanguage]);
   return (
     <header
       className={
@@ -144,9 +144,7 @@ export default function Navbar() {
               <ul className=" uppercase font-bold text-md text-gray-300 font-universalSerif tracking-wider lg:pr-0 pr-2">
                 {router.locales.map((locale) => (
                   <li
-                    onClick={() => {
-                      il18n.changeLanguage(locale);
-                    }}
+                  onClick={async () => await setLanguage(locale)}
                     key={locale}
                     className={`inline-block ml-2 cursor-pointer transition-all hover:text-white lg:px-2`}
                   >
