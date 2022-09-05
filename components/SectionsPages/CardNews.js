@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-export default function CardNews({ id }) {
+export default function CardNews({ news }) {
   return (
-    <div className="lg:col-span-1 col-span-full" key={id}>
+    <div className="lg:col-span-1 col-span-full" key={news.id}>
       <Image
         src={"/assets/img1.png"}
         alt=""
@@ -14,14 +14,12 @@ export default function CardNews({ id }) {
       />
       <div className=" p-5">
         <h4 className=" font-medium tracking-wide text-2xl mb-2 font-universalSerif">
-          EXAMPLE TITLE
+        {news.name}
         </h4>
         <p className=" mb-6  italic lg:text-lg lg:pr-20 opacity-80">
-          lorem ipsum is simply dummy text of the printing and typesetting
-          industry lorem ipsum has been the industry&rsquo;s standard dummy text ever
-          since th 1500s, when an unknown printer took
+          {news.simplifiedDescription}
         </p>
-        <Link href="/latestNews/1">
+        <Link href={`/latestNews/${news.slug}`}>
           <a className="btn font-universalSerif tracking-wider transition-all hover:opacity-90">
             READ MORE
           </a>

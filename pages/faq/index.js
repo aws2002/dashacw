@@ -1,10 +1,10 @@
-import Layout from "../components/Layouts/Layout";
+import Layout from "../../components/Layouts/Layout";
 import { AiFillStar } from "react-icons/ai";
-import FAQs from "../components/SectionsPages/FAQs";
+import FAQs from "../../components/SectionsPages/FAQs";
 import Link from "next/link";
-export default function Faq() {
+export default function Faq({fags}) {
   return (
-    <Layout bg="bg2">
+    <Layout bg="/assets/BG@2x.png">
       <section className="fqa px-4 my-20">
         <div className=" container lg:px-24 px-4">
           <div className=" title text-center">
@@ -22,7 +22,7 @@ export default function Faq() {
               );
             })}
           </div>
-          <FAQs />
+          <FAQs faqs={fags}/>
           <div className=" text-center my-20 font-universalSerif">
             <p className=" mb-10 text-2xl font-universalSerif">
               STILL HAVE QUESTIONS? CONTACT US
@@ -35,4 +35,16 @@ export default function Faq() {
       </section>
     </Layout>
   );
+}
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const res = await fetch('http://localhost:4000/faqs')
+  const posts = await res.json()
+
+  return {
+    props: {
+      fags:posts,
+    },
+  }
 }

@@ -1,10 +1,9 @@
 import React from "react";
 import CollapseFAQs from "../Tools/CollapseFAQs";
-import DataCollapseFAQs from "../Data/DataCollapseFAQs";
-export default function FAQs() {
+export default function FAQs({faqs}) {
   return (
     <div>
-      <CollapseFAQs data={DataCollapseFAQs}/>
+      <CollapseFAQs data={faqs}/>
     </div>
   );
 }

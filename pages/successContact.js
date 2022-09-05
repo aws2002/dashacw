@@ -4,7 +4,7 @@ import { BsCheckLg } from "react-icons/bs";
 
 export default function SuccessContact() {
   return (
-    <Layout bg="bg2">
+    <Layout>
       <section className="success--contact px-4">
         <div className=" container SiTruenas">
           <div className=" grid grid-cols-1">

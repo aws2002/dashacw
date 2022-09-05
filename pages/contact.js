@@ -2,7 +2,7 @@ import Layout from "../components/Layouts/Layout";
 import { AiFillStar } from "react-icons/ai";
 export default function Contact() {
   return (
-    <Layout bg="bg2">
+    <Layout bg="/assets/BG@2x.png">
       <section className="contact px-4 my-20">
         <div className=" container lg:px-20 px-4">
           <div className=" title text-center">

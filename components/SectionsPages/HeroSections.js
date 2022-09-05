@@ -4,6 +4,7 @@ import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
+
 export default function HeroSections() {
   const [t, il18n] = useTranslation();
   const sliderRef = useRef(null);
@@ -74,9 +75,7 @@ export default function HeroSections() {
           className=" z-50  absolute cursor-pointer lg:top-[45%] top-[41%] lg:left-4 left-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
           onClick={() => sliderRef.current.slickPrev()}
         >
-          <picture>
-            <img src="./assets/L-Arrow.png" className=" lg:w-10 w-7" alt="" />
-          </picture>
+          <Image src="/assets/L-Arrow.png" width={35} height={60} alt="" />
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.2 }}
@@ -84,27 +83,48 @@ export default function HeroSections() {
           className=" z-50  absolute cursor-pointer lg:top-[45%] top-[41%] lg:right-4 right-2 transition-all hover:text-main hover:shadow-lg p-3 rounded-full"
           onClick={() => sliderRef.current.slickNext()}
         >
-          <picture>
-            <img src="./assets/R-Arrow.png" className=" lg:w-10 w-7" alt="" />
-          </picture>
+          <Image src="/assets/R-Arrow.png" width={35} height={60} alt="" />
         </motion.div>
       </div>
 
       <div className=" grid grid-cols-1 ">
         <Slider {...settings} ref={sliderRef}>
           {dataHeroSections.map(({ id, img, name, text, saveUp }) => (
-            <div key={id} className=" h-screen bg3 bg-cover bg-no-repeat">
-              <div className=" grid grid-cols-12 ">
-                <div className=" col-span-12 mb-16 pt-10 text-center lg:order-2 order-1">
-                  <h1 className="font-universalSerif lg:text-[65px] text-[28px] mb-4 text-white ">
-                    JUSTIN TURNBULL
-                    <span className="block text-main text-shadow">VS</span>
-                    BRIAN PILLMAN JR
-                  </h1>
-                  <button className="transition-all hover:opacity-90 btn text-2xl border border-b-4 font-medium border-black font-universalSerif tracking-wider">
-                    
-                    {t("home.btn1")}
-                  </button>
+            <div key={id}>
+              <div className={"bgWrap-h lg:block hidden"}>
+                <Image
+                  alt="Mountains"
+                  src="/assets/Carosel image.png"
+                  layout="responsive"
+                  width={200}
+                  height={100}
+                  objectFit="cover"
+                  quality={100}
+                />
+              </div>
+              <div className={"bgWrap-h lg:hidden block"}>
+                <Image
+                  alt="Mountains"
+                  src="/assets/Carosel Image@2x.png"
+                  layout="responsive"
+                  width={200}
+                  height={380}
+                  objectFit="cover"
+                  quality={100}
+                />
+              </div>
+              <div className="h-screen  bg-cover bg-no-repeat">
+                <div className=" grid grid-cols-12 ">
+                  <div className=" col-span-12 mb-16 pt-10 text-center lg:order-2 order-1">
+                    <h1 className="font-universalSerif lg:text-[65px] text-[28px] mb-4 text-white ">
+                      JUSTIN TURNBULL
+                      <span className="block text-main text-shadow">VS</span>
+                      BRIAN PILLMAN JR
+                    </h1>
+                    <button className="transition-all hover:opacity-90 btn text-2xl border border-b-4 font-medium border-black font-universalSerif tracking-wider">
+                      {t("home.btn1")}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

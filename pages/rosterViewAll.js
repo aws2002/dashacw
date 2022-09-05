@@ -2,10 +2,12 @@ import React from "react";
 import Layout from "../components/Layouts/Layout";
 import CardRoster from "../components/SectionsPages/CardRoster";
 import { GiMuscleUp, GiMuscularTorso } from "react-icons/gi";
+import BGImage from "../components/Tools/BGImage";
 export default function RosterViewAll() {
   return (
     <Layout>
-      <section className="roster--viewAll py-20">
+      <section className="py-20">
+        <BGImage hrefBg={"/assets/bg2.png"}/>
         <div className=" container lg:px-20 px-4">
         <div className=" text-center mb-10">
           <h2 className=" font-extrabold lg:text-4xl text-2xl uppercase">

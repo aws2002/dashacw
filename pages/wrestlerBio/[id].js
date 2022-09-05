@@ -8,7 +8,7 @@ export default function WrestlerBio() {
   const [selectedId, setSelectedId] = React.useState(false);
   return (
     <Layout>
-      <section className="wrestler--bio mb-20 ">
+      <section className="wrestler--bio mb-20">
         <HeroSectionWrestlerBio />
         <div className=" container mt-10 px-4">
           <div className=" my-10">
@@ -85,7 +85,7 @@ export default function WrestlerBio() {
                     <picture>
                       <img
                         loading="lazy"
-                        src="../assets/Vid4.png"
+                        src="/assets/Vid4.png"
                         className=" w-full"
                         alt=""
                       />
@@ -101,7 +101,7 @@ export default function WrestlerBio() {
                         <picture>
                           <img
                             loading="lazy"
-                            src="../assets/sans titre-0856.png"
+                            src="/assets/sans titre-0856.png"
                             alt=""
                           />
                         </picture>

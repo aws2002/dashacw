@@ -2,55 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 @import "./variables/variables";
-
 .switch[data-isOn="true"] {
   justify-content: flex-end;
 }
-
 body {
   overflow-x: hidden;
 }
-
 @font-face {
   font-family: 'font-44080';
   font-style: normal;
   font-weight: normal;
   src: url('../public/assets/Universal\ Serif.woff');
 }
-
 .font-universalSerif {
   font-family: 'font-44080';
-}
-
-.bg1 {
-  background-image: url("../public/assets/Bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bg2 {
-  background-image: url("../public/assets/BG@2x.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bg3 {
-  background-image: url("../public/assets/Carosel\ image.png");
-}
-
-.bg4 {
-  background-image: url("../public/assets/Herobg.png");
-}
-
-.roster--viewAll,
-.our--roster {
-  background-image: url("../public/assets/bg2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
 }
 
 .card {
@@ -69,7 +34,7 @@ body {
   background-color: rgba(0, 0, 0, 0.571);
   position: absolute;
   width: 100%;
-  height: calc(60% + 29.3px);
+  height: calc(60% + 30.4px);
   transition: transform .5s .25s ease-in;
   z-index: 1;
 }
@@ -282,14 +247,19 @@ p {
   .card::after {
     height: calc(60% + 19px);
   }
-
-  .bg3 {
-    background-image: url("../public/assets/Carosel\ Image@2x.png");
+  .bgWrap{
+    height: 135% !important;
   }
 }
 .bgWrap {
-  position: fixed;
-  height: 100vh;
+  position: absolute;
+  height: 92%;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+.bgWrap-h {
+  position: absolute;
   width: 100vw;
   overflow: hidden;
   z-index: -1;
