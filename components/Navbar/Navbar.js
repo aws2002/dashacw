@@ -141,36 +141,19 @@ export default function Navbar() {
             </div>
             <div className="lg:col-span-10 col-span-full flex items-center lg:px-4 lg:order-2 pr-2 order-1">
               <ul className=" uppercase font-bold text-md text-gray-300 font-universalSerif tracking-wider">
-                <li
-                  onClick={() => {
-                    il18n.changeLanguage("es");
-                  }}
-                  className={`${
-                    il18n.language === "es" ? " text-white" : "text-gray-300"
-                  } inline-block ml-1 cursor-pointer transition-all hover:text-white`}
-                >
-                  ES
-                </li>
-                <li
-                  onClick={() => {
-                    il18n.changeLanguage("fr");
-                  }}
-                  className={`${
-                    il18n.language === "fr" ? " text-white" : "text-gray-300"
-                  } inline-block ml-2 cursor-pointer border-x-4 transition-all hover:text-white border-main px-2`}
-                >
-                  FR
-                </li>
-                <li
-                  onClick={() => {
-                    il18n.changeLanguage("en");
-                  }}
-                  className={`${
-                    il18n.language === "en" ? " text-white" : "text-gray-300"
-                  } inline-block  cursor-pointer transition-all hover:text-white`}
-                >
-                  EN
-                </li>
+                {router.locales.map((locale) => (
+                  <li
+                    onClick={() => {
+                      il18n.changeLanguage(locale);
+                    }}
+                    key={locale}
+                    className={`inline-block ml-2 cursor-pointer transition-all hover:text-white lg:px-2`}
+                  >
+                    <Link href={router.asPath} locale={locale}>
+                      <a>{locale}</a>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

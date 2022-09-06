@@ -108,6 +108,7 @@ export default function HeroSections() {
                   src="/assets/Carosel Image@2x.png"
                   layout="responsive"
                   width={50}
+                  
                   height={25}
                   objectFit="cover"
                   quality={100}

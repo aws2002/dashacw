@@ -12,7 +12,7 @@ const OurRoster = dynamic(() =>
   import("../components/SectionsPages/OurRoster")
 );
 
-export default function Home({ articles ,rosters}) {
+export default function Home({ articles, rosters }) {
   const [showModal, setShowModal] = useState(false);
   return (
     <Layout>
@@ -23,7 +23,7 @@ export default function Home({ articles ,rosters}) {
       </Head>
       <HeroSections />
       <LatestNews articles={articles} />
-      <OurRoster rosters={rosters}/>
+      <OurRoster rosters={rosters} />
     </Layout>
   );
 }
@@ -37,5 +37,5 @@ export async function getServerSideProps() {
   const dataRosters = await resRosters.json();
 
   // Pass data to the page via props
-  return { props: { articles: dataNews,rosters:dataRosters } };
+  return { props: { articles: dataNews, rosters: dataRosters } };
 }

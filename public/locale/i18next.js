@@ -1,6 +1,6 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from 'i18next-browser-languagedetector';
+import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
 
 i18next
@@ -8,18 +8,19 @@ i18next
   .use(LanguageDetector)
   .use(HttpApi)
   .init({
-    supportedLngs:["en","fr","es"],
+    supportedLngs: ["en", "fr", "es"],
     fallbackLng: "en",
     debug: false,
     detection: {
-      order: ['path', 'cookie','htmlTag','localStorage','subdomain'],
-      caches: ['cookie'],
+      // order: ['path', 'cookie','htmlTag','localStorage','subdomain'],
+      caches: ["cookie"],
     },
     backend: {
       loadPath: "/locale/{{lng}}/translation.json",
-    },react:{
-      useSuspense:false
-    }
+    },
+    react: {
+      useSuspense: false,
+    },
   });
 
 export default i18next;

@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextTranslate = require('next-translate')
 module.exports = {
   reactStrictMode: true,
-  ...nextTranslate,
+  i18n:{
+    locales:["en","fr","es"],
+    defaultLocale:"en",
+  },
   swcMinify: true,
   experimental: {
     images: {
