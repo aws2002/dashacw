@@ -12,7 +12,7 @@ const OurRoster = dynamic(() =>
   import("../components/SectionsPages/OurRoster")
 );
 
-export default function Home({ articles }) {
+export default function Home({ articles ,rosters}) {
   const [showModal, setShowModal] = useState(false);
   return (
     <Layout>
@@ -23,16 +23,19 @@ export default function Home({ articles }) {
       </Head>
       <HeroSections />
       <LatestNews articles={articles} />
-      <OurRoster />
+      <OurRoster rosters={rosters}/>
     </Layout>
   );
 }
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`http://localhost:4000/news`);
-  const data = await res.json();
+  const resNews = await fetch(`http://localhost:4000/news`);
+  const dataNews = await resNews.json();
+
+  const resRosters = await fetch(`http://localhost:4000/rosters`);
+  const dataRosters = await resRosters.json();
 
   // Pass data to the page via props
-  return { props: { articles: data } };
+  return { props: { articles: dataNews,rosters:dataRosters } };
 }

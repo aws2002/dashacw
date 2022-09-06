@@ -114,5 +114,55 @@
             "titel": "How Digital Marketing Work?",
             "text": "Comfort reached gay perhaps chamber his six detract besides add. Moonlight newspaper up its enjoyment agreeable depending. Timed voice share led him to widen noisy young. At weddings believed laughing although the material does the exercise of. Up attempt offered ye civilly so sitting to. She new course gets living within Elinor joy. She rapturous suffering concealed."
         }
+    ],
+    "rosters": [
+        {
+            "id": 1,
+            "name": "Example 1",
+            "slug": "roster1",
+            "img": "/assets/Image 1.png"
+        },
+        {
+            "id": 2,
+            "name": "Example 2",
+            "slug": "roster2",
+            "img": "/assets/Image 1.png"
+        },
+        {
+            "id": 3,
+            "name": "Example 3",
+            "slug": "roster3",
+            "img": "/assets/Image 1.png"
+        },
+        {
+            "id": 4,
+            "name": "Example 4",
+            "slug": "roster4",
+            "img": "/assets/Image 1.png"
+        },
+        {
+            "id": 5,
+            "slug": "roster5",
+            "name": "Example 5",
+            "img": "/assets/Image 1.png"
+        },
+        {
+            "id": 6,
+            "name": "Example 6",
+            "slug": "roster6",
+            "img": "/assets/Image 1.png"
+        },
+        {
+            "id": 7,
+            "name": "Example 7",
+            "slug": "roster7",
+            "img": "/assets/Image 1.png"
+        },
+        {
+            "id": 8,
+            "name": "Example 8",
+            "slug": "roster8",
+            "img": "/assets/Image 1.png"
+        }
     ]
 }

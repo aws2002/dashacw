@@ -3,13 +3,20 @@ import Layout from "../../components/Layouts/Layout";
 import { motion } from "framer-motion";
 import { BsPlayCircleFill } from "react-icons/bs";
 import Modal from "../../components/Tools/Modal";
+import { useRouter } from "next/router";
 import HeroSectionWrestlerBio from "../../components/SectionsPages/HeroSectionWrestlerBio";
-export default function WrestlerBio() {
+export default function WrestlerBio({ rosters }) {
   const [selectedId, setSelectedId] = React.useState(false);
+  const { query } = useRouter();
+  const { slug } = query;
+  const findRosters = rosters.find((x) => x.slug === slug);
+  if (!findRosters) {
+    return <Layout>Rosters Not Found</Layout>;
+  }
   return (
     <Layout>
       <section className="wrestler--bio mb-20">
-        <HeroSectionWrestlerBio />
+        <HeroSectionWrestlerBio rosters={findRosters}/>
         <div className=" container mt-10 px-4">
           <div className=" my-10">
             <h2 className=" text-3xl  my-3 font-universalSerif">LINKS</h2>
@@ -119,4 +126,13 @@ export default function WrestlerBio() {
       </section>
     </Layout>
   );
+}
+
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`http://localhost:4000/rosters`);
+  const data = await res.json();
+
+  // Pass data to the page via props
+  return { props: { rosters: data } };
 }

@@ -3,7 +3,7 @@ import { motion, variants } from "framer-motion";
 import { GiMuscleUp, GiMuscularTorso } from "react-icons/gi";
 import Link from "next/link";
 import Image from "next/image";
-export default function OurRoster() {
+export default function OurRoster({ rosters }) {
   return (
     <section className="mt-20">
       <div className={"bgWrap-h lg:block hidden"}>
@@ -53,17 +53,10 @@ export default function OurRoster() {
           </h2>
         </div>
         <div className=" grid-cols-4 grid lg:gap-10 gap-4">
-          {[
-            { id: 1, name: "JIMMY", img: "/assets/Image 1.png" },
-            { id: 2, name: "EXAMPLE", img: "/assets/Image 1.png" },
-            { id: 3, name: "EXAMPLE", img: "" },
-            { id: 4, name: "EXAMPLE", img: "/assets/Image 1.png" },
-            { id: 5, name: "EXAMPLE", img: "/assets/Image 1.png" },
-            { id: 6, name: "EXAMPLE", img: "/assets/Image 1.png" },
-            { id: 7, name: "EXAMPLE", img: "/assets/Image 1.png" },
-            { id: 8, name: "EXAMPLE", img: "" },
-          ].map(({ id, name, img }) => {
-            return <CardRoster id={id} key={id} name={name} img={img} />;
+          {rosters.map(({ id, name, img, slug }) => {
+            return (
+              <CardRoster id={id} key={id} name={name} img={img} slug={slug} />
+            );
           })}
           <div className=" col-span-4 text-center mt-10">
             <Link href="/rosterViewAll">

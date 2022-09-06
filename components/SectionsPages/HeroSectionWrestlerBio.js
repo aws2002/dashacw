@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-export default function HeroSectionWrestlerBio() {
+export default function HeroSectionWrestlerBio({rosters}) {
   const list = {
     visible: {
       opacity: 1,
@@ -59,7 +59,7 @@ export default function HeroSectionWrestlerBio() {
                 variants={list}
                 className=" font-extrabold lg:text-4xl text-xl"
               >
-                JUSTIN TURNBULL
+                {rosters.name}
               </motion.h1>
               <ul className=" mt-6 text-lg text-gray-300">
                 {[
