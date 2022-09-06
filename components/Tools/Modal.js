@@ -102,7 +102,7 @@ export default function Modal({ isToggled, children, setToggle }) {
                 delay: 0.3,
               },
             }}
-            className="w-full px-4 my-20 flex justify-center items-center fixed container inset-0 bg-main p-5 z-[1000] overflow-hidden"
+            className="w-full px-4 my-20 flex justify-center items-center fixed container inset-0  p-5 z-[1000] overflow-hidden"
           >
             <motion.div
               initial={{
